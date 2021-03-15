@@ -1,14 +1,26 @@
-import { Hero, SectionOne, SectionTwo } from "../organisms";
+import {
+  Hero,
+  SectionOne,
+  SectionThree,
+  SectionTwo,
+  SectionFour,
+  Footer,
+} from "../organisms";
 import { SectionWrapper } from "../layout/SectionWrapper";
 
 const Home = () => {
   return (
-    <SectionWrapper>
-      <Hero />
-      <SectionOne />
-      <SectionTwo />
-    </SectionWrapper>
+    <div>
+      <SectionWrapper className="overflow-hidden">
+        <Hero />
+        <SectionOne />
+        <SectionTwo />
+      </SectionWrapper>
+      <SectionThree />
+      <SectionFour />
+      <Footer />
+    </div>
   );
 };
 
-export default Home;
+export { Home };

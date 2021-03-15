@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: "Bw Nista Geometric DEMO";
+  src: local("Bw Nista Geometric DEMO"),
+    url(./fonts/BwNistaGeometricDEMOExtraBoldItalic.otf) format("ttf");
+}
+
 @tailwind utilities;
