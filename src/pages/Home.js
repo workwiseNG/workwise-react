@@ -1,7 +1,7 @@
 import {
   Hero,
   SectionOne,
-  SectionThree,
+  // SectionThree,
   SectionTwo,
   SectionFour,
   Footer,
@@ -13,10 +13,10 @@ const Home = () => {
     <div>
       <SectionWrapper className="overflow-hidden">
         <Hero />
-        <SectionOne />
-        <SectionTwo />
       </SectionWrapper>
-      <SectionThree />
+      <SectionOne />
+      <SectionTwo />
+      {/* <SectionThree /> */}
       <SectionFour />
       <Footer />
     </div>

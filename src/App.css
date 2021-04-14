@@ -1,3 +1,7 @@
+body {
+  color: #1a1a1a;
+}
+
 .menu {
   font-size: 3rem;
   margin-left: 1rem;
@@ -43,7 +47,7 @@
 
 .nav-text a {
   text-decoration: none;
-  color: #1a1a1a;
+  color: #ffffff;
   font-weight: 600;
   font-size: 18px;
   width: 95%;
@@ -56,6 +60,7 @@
 
 .nav-text a:hover {
   background-color: #ffffff;
+  color: #1a1a1a;
 }
 
 .nav__menu__items {
@@ -83,4 +88,119 @@
 
 .user__info {
   display: flex;
+}
+
+.label-text {
+  margin-top: -8px;
+  margin-left: 15px;
+  background: white;
+  padding: 0px 2px;
+}
+
+.input-box {
+  margin-top: 2rem;
+  border: 1px solid #0a459f;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+}
+
+/* .box {
+  box-shadow: 0px 0px 0px 2px #0a459f 19%;
+} */
+
+.footer-text {
+  font-size: 0.58rem;
+  letter-spacing: 0.2rem;
+}
+
+.slim-border {
+  border: 0.5px solid #0a459f;
+}
+
+.middle-border {
+  border-top: 0.5px solid #0a459f;
+  border-bottom: 0.5px solid #0a459f;
+}
+
+.btn-border {
+  border: 1.5px solid #0a459f;
+}
+
+.secure {
+  height: 16rem;
+  width: 31rem;
+}
+
+.nav-links {
+  font-size: 13px;
+}
+
+.height {
+  height: 0.15rem;
+}
+
+.outline {
+  outline: none;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #0a459f;
+}
+
+.picture {
+  margin-top: 4.28rem;
+}
+
+.private {
+  margin-top: 30rem;
+}
+
+.slim-ash-border {
+  border: 0.5px solid #808080;
+}
+
+.picture-border {
+  border: 0.14px solid #808080;
+}
+
+.career-width {
+  width: 48%;
+}
+
+.meeting-icon {
+  width: 12%;
+}
+
+.lineHeight {
+  line-height: 1.2;
+}
+
+.lightAsh {
+  color: #1a1a1a;
+}
+
+.footerText {
+  font-size: 0.85rem;
+}
+
+.inner-picture {
+  margin-right: -4.61rem;
+}
+
+.track {
+  letter-spacing: 0.2rem;
+}
+
+.learn {
+  margin-left: 2.7rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    margin-left: 32rem;
+  }
 }

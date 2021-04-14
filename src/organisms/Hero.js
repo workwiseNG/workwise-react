@@ -1,34 +1,46 @@
-import postcard from "../assets/postCard.png";
+import postcard from "../assets/postCard.svg";
 import postcardTwo from "../assets/postCardTwo.png";
-import postcardThree from "../assets/postCardThree.png";
+import postcardThree from "../assets/postCardThree.svg";
 import { HeaderOne, SmallText } from "../atoms";
 import Navbar from "../templates/Navbar";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <div>
       <Navbar />
-      <div className="lg:flex justify-between pb-8">
-        <section className="mt-16 lg:ml-28">
+      <div className="grid grid-cols-12 mt-20">
+        <section className="col-start-2 col-end-8">
           <HeaderOne
-            text="Building a better workplace for everyone."
-            className="mb-4 lg:text-5xl lg:max-w-xs"
+            text={
+              <p>
+                Building a <br /> better workplace for everyone
+              </p>
+            }
+            className="mb-4 lg:text-6xl"
           />
 
           <SmallText
             text="We empower productivity and the overall well-being of employees, while fostering an inclusive workplace community."
             className="my-4 pt-4 lg:max-w-sm"
           />
-
-          <button class="bg-primary text-white text-xs py-2 px-4 rounded">
+          <Link to="/tryforfree">
+            <button class="bg-primary focus:outline-none text-white nav-links font-verybold font-medium py-4 px-8 rounded-md">
+              Try for free
+            </button>
+          </Link>
+          {/* <button class="bg-primary outline-none mt-4 text-white text-xs font-bold py-4 px-10 rounded-md">
             Try for free
-          </button>
+          </button> */}
         </section>
-
-        <section className="mt-12 hidden lg:block lg:mt-32 ml-8">
-          <img src={postcardThree} alt="postcard" className="w-1/2" />
-          <img src={postcardTwo} alt="postcard" className="w-1/2 ml-20 -mt-8" />
-          <img src={postcard} alt="postcard" className="w-1/2 -mt-8 ml-12" />
+        <section className="mt-12 hidden md:block col-start-8 col-end-12 lg:-ml-16 mb-4">
+          <img src={postcardThree} alt="postcard" className="w-full mt-8" />
+          <img
+            src={postcardTwo}
+            alt="postcard"
+            className="ml-24 -mt-14 lg:w-full"
+          />
+          <img src={postcard} alt="postcard" className="-mt-8 ml-4 lg:w-full" />
         </section>
       </div>
     </div>

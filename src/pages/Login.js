@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { SectionWrapper } from "../layout/SectionWrapper";
 import { LogInIntro } from "../molecules";
 import Navbar from "../templates/Navbar";
+import Input from "../templates/Input";
+
 const Login = () => {
   return (
     <div>
@@ -10,55 +12,59 @@ const Login = () => {
           <Navbar />
         </div>
 
-        <div className="lg:flex">
-          <section className="mt-12 lg:ml-16">
+        <div className="lg:grid grid-cols-12 lg:m-auto lg:w-10/12">
+          <section className="mt-12 col-start-1 col-end-5 lg:ml-4">
             <LogInIntro
-              text="Enter your workwise company url and your company email to gain access."
+              text={
+                <p>
+                  Enter your workwise company url and <br /> your company email
+                  to gain access.
+                </p>
+              }
               title="Welcome Back!"
-              className="lg:max-w-xs lg:mr-56 placeholder-bodyGrey"
+              className="placeholder-bodyGrey"
             />
           </section>
 
-          <section className="border border-primary rounded-md mt-16 p-4">
-            <div>
-              <label
-                htmlFor="Your company url"
-                className="text-xs text-primary"
+          <section className="slim-border col-start-7 col-end-13 rounded-md mt-12 px-10 py-6">
+            <section className="flex items-center">
+              <Input
+                label="Your company url"
+                placeholder="mentworkspace"
+                type="text"
+              />
+              <p
+                className="text-sm font-semibold text-ash mt-2 ml-2"
+                style={{ fontFamily: "Bw Nista Geometric DEMO" }}
               >
-                Your company url
-              </label>
-              <section className="flex items-center">
-                <input
-                  type="text"
-                  placeholder="mentworkspace"
-                  className="border border-primary outline-none rounded-md p-2 w-9/12"
-                />
-                <p className="text-xs text-darkAsh ml-2">.workwise.com</p>
-              </section>
-            </div>
+                .workwise.com
+              </p>
+            </section>
 
             <div className="mt-4">
-              <label
-                htmlFor="Your company url"
-                className="text-xs text-primary"
-              >
-                Your company email
-              </label>
-              <input
-                type="email"
+              <Input
+                label="Your company email"
                 placeholder="osa@mudia.ment"
-                className="border border-primary outline-none rounded-md p-2 w-full"
+                type="email"
+                className="w-full"
               />
             </div>
 
             <Link to="/securecode">
-              <button class="bg-primary text-white text-xs py-4 px-2 rounded mt-4 w-full">
-                Get Verification Code
+              <button
+                className="bg-primary text-white text-xs my-4 w-full font-medium py-4 px-8 rounded-md text-center"
+                style={{ fontFamily: "Bw Nista Geometric DEMO" }}
+              >
+                Get Secure Verification Code
               </button>
             </Link>
           </section>
         </div>
       </SectionWrapper>
+      <link
+        href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+        rel="stylesheet"
+      />
     </div>
   );
 };

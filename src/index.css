@@ -3,8 +3,17 @@
 
 @font-face {
   font-family: "Bw Nista Geometric DEMO";
-  src: local("Bw Nista Geometric DEMO"),
-    url(./fonts/BwNistaGeometricDEMOExtraBoldItalic.otf) format("ttf");
+  src: url(fonts/BwNistaGeometricDEMORegular.otf);
+}
+
+@font-face {
+  font-family: "Bw Nista Geometric DEMO Bold";
+  src: url(fonts/BwNistaGeometricDEMOMedium.otf);
+}
+
+@font-face {
+  font-family: "Bw Nista Geometric DEMO Thin";
+  src: url(fonts/BwNistaGeometricDEMOThin.otf);
 }
 
 @tailwind utilities;
