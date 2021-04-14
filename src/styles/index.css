@@ -10,10 +10,10 @@
   font-family: "Bw Nista Geometric DEMO Bold";
   src: url("../assets/fonts/bwnistageometricdemomedium-webfont.woff");
 }
-
+/* Bw Nista Geometric DEMO Thin */
 @font-face {
   font-family: "Bw Nista Geometric DEMO Thin";
-  src: url("../assets/fonts/bwnistageometricdemoregularitalic-webfont.woff2");
+  src: url("../assets/fonts/bwnistageometricdemothin-webfont.woff");
 }
 
 @tailwind utilities;

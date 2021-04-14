@@ -244,13 +244,13 @@ const VisitorManagement = () => {
           buttonText="Request Demo"
         />
 
-        <SectionWrapper>
+        {/* <SectionWrapper>
           <img
             src={organization}
             alt="organization"
             className="object-cover lg:my-36"
           />
-        </SectionWrapper>
+        </SectionWrapper> */}
 
         <Footer />
       </div>
