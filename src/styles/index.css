@@ -3,17 +3,17 @@
 
 @font-face {
   font-family: "Bw Nista Geometric DEMO";
-  src: url("../assets/fonts/BwNistaGeometricDEMORegular.otf");
+  src: url("../assets/fonts/bwnistageometricdemoregular-webfont.woff");
 }
 
 @font-face {
   font-family: "Bw Nista Geometric DEMO Bold";
-  src: url("../assets/fonts/BwNistaGeometricDEMOMedium.otf");
+  src: url("../assets/fonts/bwnistageometricdemomedium-webfont.woff");
 }
 
 @font-face {
   font-family: "Bw Nista Geometric DEMO Thin";
-  src: url("../assets/fonts/BwNistaGeometricDEMOThin.otf");
+  src: url("../assets/fonts/bwnistageometricdemoregularitalic-webfont.woff2");
 }
 
 @tailwind utilities;
