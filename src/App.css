@@ -203,6 +203,10 @@ body {
   width: 44%;
 }
 
+.visibility {
+  margin-left: 23rem;
+}
+
 @media screen and (min-width: 1024px) {
   .button {
     margin-left: 32rem;

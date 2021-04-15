@@ -33,7 +33,11 @@ const EmployeeClockIn = () => {
             and dashboard.
           </p>
           <div className="flex items-center mt-10">
-            <img src={googlePlay} alt="googlePlay" className="-ml-4 w-4/12" />
+            <img
+              src={googlePlay}
+              alt="googlePlay"
+              className="-ml-4 playStore"
+            />
             <img src={iosStore} alt="iosStore" className="w-40 h-12" />
           </div>
         </div>

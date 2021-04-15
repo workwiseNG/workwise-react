@@ -1,10 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { SectionWrapper } from "../layout/SectionWrapper";
 import { LogInIntro } from "../molecules";
 import Input from "../templates/Input";
 import Navbar from "../templates/Navbar";
+import eyeOpen from "../assets/eyeOpen.svg";
+import eyeClosed from "../assets/eyeClosed.svg";
 
 const TryForFree = () => {
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePasswordVisibility = () => {
+    setPasswordShown(passwordShown ? false : true);
+  };
   return (
     <div>
       <SectionWrapper>
@@ -47,12 +54,20 @@ const TryForFree = () => {
             />
             <Input label="First name" placeholder="Osamudiamen" type="text" />
             <Input label="Last name" placeholder="Imaseun" type="text" />
-            <Input
-              label="Your preferred password"
-              placeholder="osa@mudia.ment"
-              type="password"
-            />
-
+            <div className="w-full relative">
+              <i onClick={togglePasswordVisibility}>
+                <img
+                  src={passwordShown ? eyeOpen : eyeClosed}
+                  alt="visible"
+                  className="w-6 absolute visibility mt-4"
+                />
+              </i>
+              <Input
+                label="Your preferred password"
+                placeholder="password"
+                type={passwordShown ? "text" : "password"}
+              />
+            </div>
             <div className="float-right">
               <Link to="/yourcompany" className="text-right">
                 <button class="bg-primary text-white text-sm font-medium my-4 py-4 px-20 rounded-md">
