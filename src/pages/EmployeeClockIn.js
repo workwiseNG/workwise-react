@@ -9,7 +9,7 @@ import clockInTwo from "../assets/clockInTwo.svg";
 import clockInThree from "../assets/clockInThree.svg";
 import { Aside } from "../molecules";
 import { BigText } from "../atoms";
-import organization from "../assets/organizations.png";
+// import organization from "../assets/organizations.png";
 import { Footer } from "../organisms";
 
 const EmployeeClockIn = () => {
@@ -91,13 +91,13 @@ const EmployeeClockIn = () => {
         buttonText="Request Demo"
       />
 
-      <SectionWrapper>
+      {/* <SectionWrapper>
         <img
           src={organization}
           alt="organization"
           className="object-cover lg:my-36"
         />
-      </SectionWrapper>
+      </SectionWrapper> */}
 
       <Footer />
     </div>

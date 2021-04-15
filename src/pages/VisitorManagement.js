@@ -9,7 +9,7 @@ import iosStore from "../assets/iosStore.png";
 import visitor from "../assets/visitor.png";
 import visitorOne from "../assets/visitorTwo.png";
 import { BigText } from "../atoms";
-import organization from "../assets/organizations.png";
+// import organization from "../assets/organizations.png";
 import { Footer } from "../organisms";
 
 const VisitorManagement = () => {
