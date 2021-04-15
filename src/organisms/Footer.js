@@ -67,12 +67,12 @@ const Footer = () => {
                   <img
                     src={playStore}
                     alt="playStore"
-                    className="w-1/4 lg:w-32 mb-2 -ml-2 object-cover lg:mt-8"
+                    className="w-1/4 lg:w-36 mb-2 -ml-2 object-cover lg:mt-8"
                   />
                   <img
                     src={ios}
                     alt="ios store"
-                    className="w-1/4 lg:w-28 object-cover"
+                    className="w-1/4 lg:w-32 object-cover"
                   />
                 </ul>
               </section>

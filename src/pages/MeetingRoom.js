@@ -11,7 +11,9 @@ import app from "../assets/app.png";
 import tablet from "../assets/tablet-ipad.svg";
 import dashTwo from "../assets/dashTwo.png";
 import { HeaderTwo } from "../atoms";
-import organization from "../assets/organizations.png";
+// import visitor from "../assets/visitor.png";
+// import visitorOne from "../assets/visitorTwo.png";
+// import organization from "../assets/organizations.png";
 import { Footer } from "../organisms";
 
 const MeetingRoom = () => {
@@ -22,23 +24,28 @@ const MeetingRoom = () => {
       </SectionWrapper>
 
       <div className="grid grid-cols-12 mt-12">
-        <div className="col-start-2 col-end-9">
-          <p className="uppercase text-primary text-xs font-bold mb-4">
+        <div className="col-start-3 col-end-8">
+          <p className="uppercase text-primary text-small font-bold mb-4 track">
             Meeting Rooms
           </p>
-          <p className="text-primary font-bold leading-tight text-6xl">
-            Book meeting rooms <br /> in less than 5 minutes
+          <p className="text-primary font-bold leading-tight text-5xl">
+            Book meeting rooms in less than 5 minutes
           </p>
-          <p className="text-sm text-lightBlack my-4">
+          <p className="text-sm leading-relaxed text-lightBlack my-4">
             Welcome guests with an easy-to-use visitor management <br />
             solution that keeps your workplace safe and saves your <br />
             receptionist time and energy.
           </p>
-          <div className="flex">
-            <img src={googlePlay} alt="googlePlay" className="-ml-4 w-4/12" />
-            <img src={iosStore} alt="iosStore" className="w-2/6" />
+          <div className="flex items-center mt-10">
+            <img
+              src={googlePlay}
+              alt="googlePlay"
+              className="-ml-4 playStore"
+            />
+            <img src={iosStore} alt="iosStore" className="w-40 h-12" />
           </div>
         </div>
+
         <div className="col-start-9 col-end-13 rounded-lg">
           <img src={meetingOne} alt="meetingOne" className="" />
         </div>
@@ -144,9 +151,9 @@ const MeetingRoom = () => {
         </div>
       </section>
 
-      <section className="m-auto w-9/12 my-28">
+      {/* <section className="m-auto w-9/12 my-28">
         <img src={organization} alt="organization" />
-      </section>
+      </section> */}
 
       <Footer />
     </div>

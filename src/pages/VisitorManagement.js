@@ -9,7 +9,7 @@ import iosStore from "../assets/iosStore.png";
 import visitor from "../assets/visitor.png";
 import visitorOne from "../assets/visitorTwo.png";
 import { BigText } from "../atoms";
-import organization from "../assets/organizations.png";
+// import organization from "../assets/organizations.png";
 import { Footer } from "../organisms";
 
 const VisitorManagement = () => {
@@ -33,7 +33,11 @@ const VisitorManagement = () => {
             receptionist time and energy.
           </p>
           <div className="flex items-center mt-10">
-            <img src={googlePlay} alt="googlePlay" className="-ml-4 w-4/12" />
+            <img
+              src={googlePlay}
+              alt="googlePlay"
+              className="-ml-4 playStore"
+            />
             <img src={iosStore} alt="iosStore" className="w-40 h-12" />
           </div>
         </div>
