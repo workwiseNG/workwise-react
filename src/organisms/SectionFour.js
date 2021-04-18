@@ -5,7 +5,7 @@ import { BigText } from "../atoms";
 
 const SectionFour = () => {
   return (
-    <div>
+    <div className="mt-24 lg:mt-0">
       <BigText
         text={
           <p>

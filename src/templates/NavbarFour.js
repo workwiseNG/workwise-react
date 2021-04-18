@@ -58,12 +58,16 @@ const NavbarFour = ({ text, className, textTwo }) => {
           </p>
           <div className="text-center w-full relative">
             <i>
-              <img src={lens} alt="lens" className="absolute ml-72 w-6 mt-10" />
+              <img
+                src={lens}
+                alt="lens"
+                className="absolute ml-4 lg:ml-72 w-6 mt-10"
+              />
             </i>
             <input
               type="text"
               placeholder="Search for articles, resources, etc..."
-              className="p-2 pl-16 text-sm rounded-lg w-1/2 mt-8"
+              className="p-2 pl-12 lg:pl-16 text-sm rounded-lg w-full lg:w-1/2 mt-8"
             />
           </div>
         </div>

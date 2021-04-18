@@ -67,12 +67,12 @@ const Footer = () => {
                   <img
                     src={playStore}
                     alt="playStore"
-                    className="w-1/4 lg:w-36 mb-2 -ml-2 object-cover lg:mt-8"
+                    className="w-48 lg:w-36 mb-2 -ml-4 object-cover lg:mt-8"
                   />
                   <img
                     src={ios}
                     alt="ios store"
-                    className="w-1/4 lg:w-32 object-cover"
+                    className="w-2/4 lg:w-32 object-cover"
                   />
                 </ul>
               </section>
@@ -165,15 +165,15 @@ const Footer = () => {
               >
                 Privacy Policy
               </Link>
-              <p className="font-verybold font-black text-4xl lg:-mt-6 text-lightBlack leading-relaxed mr-4">
+              <p className="hidden lg:block font-verybold font-black text-4xl lg:-mt-6 text-lightBlack leading-relaxed mr-4">
                 .
               </p>
               <Link to="/termsofservice" onClick={scrollToTop}>
-                <p className="font-verybold font-bold text-xs text-lightBlack leading-relaxed footerText mr-24">
+                <p className="font-verybold font-bold text-xs text-lightBlack leading-relaxed footerText mr-24 my-4 lg:my-0">
                   Terms of Service
                 </p>
               </Link>
-              <div className="flex">
+              <div className="flex mb-8 lg:mb-0">
                 <img src={facebook} alt="facebook" className="mr-2" />
                 <img src={twitter} alt="twitter" className="mr-2" />
                 <img src={linkedin} alt="linkedin" className="mr-2" />

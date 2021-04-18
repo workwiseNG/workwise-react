@@ -4,7 +4,7 @@ const Reason = () => {
   return (
     <div className="bg-white absolute z-10">
       <div className="mt-8 md:flex lg:-mt-28 m-auto w-10/12 relative">
-        <div className="slim-border rounded-r-none rounded-l-md mt-4 p-8 bg-white">
+        <div className="border-slim border-primary rounded-md lg:rounded-r-none lg:rounded-l-md mt-4 lg:p-8 p-6 bg-white">
           <SmallText
             text="Enhance Employee Experience"
             className="font-verybold font-bold my-4
@@ -21,7 +21,7 @@ const Reason = () => {
             className="leading-relaxed mb-8 lg:max-w-md"
           />
         </div>
-        <div className="middle-border lg:border-r-0 lg:border-l-0 mt-4 p-8 bg-white">
+        <div className="border-slim border-primary lg:border-0 lg:border-t-slim lg:border-b-slim rounded-md lg:rounded-none mt-4 lg:p-8 p-6 bg-white">
           <SmallText
             text="Improve Your Workplace"
             className="font-verybold font-bold my-4
@@ -33,7 +33,7 @@ const Reason = () => {
           />
         </div>
 
-        <div className="slim-border rounded-l-none rounded-r-md mt-4 p-8 bg-white">
+        <div className="border-slim border-primary rounded-md lg:rounded-l-none lg:rounded-r-md mt-4 lg:p-8 p-6 bg-white">
           <SmallText
             text="Enhance Workplace Security"
             className="font-verybold font-bold my-4

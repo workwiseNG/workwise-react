@@ -17,13 +17,14 @@ const SectionTwo = () => {
         </div>
       </SectionWrapper>
 
-      <div className="lg:ml-28">
-        <div className="grid grid-cols-12">
+      <div className="lg:ml-28 max-w-6xl mx-auto" style={{ width: "90%" }}>
+        <div className="lg:grid lg:grid-cols-12 mt-96 lg:mt-0">
           <div className="col-start-2 col-end-6">
             <Aside
               title={
                 <p>
-                  Easily manage your <br /> guests and visitors
+                  Easily manage <span className="lg:mr-24">your</span> guests
+                  and visitors
                 </p>
               }
               text="Welcome your visitors and create a lasting impression with our secure visitor management feature. With a visitor management platform that supports your workplace security, you can easily identify unauthorized guests, know who is in the building in case of an emergency and much more."
@@ -33,21 +34,22 @@ const SectionTwo = () => {
               Sign up for free
             </button>
           </div>
-          <div className="col-start-7 col-end-13 inner-picture">
+          <div className="lg:col-start-7 lg:col-end-13 inner-picture">
             <img
               src={visitorManage}
               alt="dashboard"
-              className="mb-8 w-1/2 ml-60"
+              className="mb-0 lg:mb-8 w-full lg:w-1/2 lg:ml-60"
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-12 mt-28">
+        <div className="lg:grid lg:grid-cols-12 mt-28">
           <div className="col-start-2 col-end-6">
             <Aside
               title={
                 <p>
-                  Smarter room booking <br /> for everyone in your office
+                  Smarter room <span className="lg:mr-24">booking</span> for
+                  everyone in your office
                 </p>
               }
               text="With the Workwise app, employees can easily find, and book meeting rooms based on amenities, locations and more."
@@ -66,7 +68,7 @@ const SectionTwo = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12 mt-28">
+        <div className="lg:grid lg:grid-cols-12 mt-28">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Effectively manage your company mails and package deliveries"
@@ -78,7 +80,11 @@ const SectionTwo = () => {
             </button>
           </div>
           <div className="col-start-7 col-end-13 inner-picture">
-            <img src={proximity} alt="dashboard" className="mb-8 w-2/6 ml-64" />
+            <img
+              src={proximity}
+              alt="dashboard"
+              className="mb-8 w-full lg:w-2/6 lg:ml-64"
+            />
           </div>
         </div>
       </div>

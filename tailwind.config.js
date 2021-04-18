@@ -26,6 +26,9 @@ module.exports = {
       boxShadow: {
         menu: "0px 0px 0px 2px rgba(10,69,159,0.19)",
       },
+      borderWidth: {
+        slim: "0.5px",
+      },
     },
   },
   variants: {

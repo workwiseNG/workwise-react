@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 
 const BlogIntro = () => {
   return (
-    <section className="mt-8 grid grid-cols-12">
+    <section className="mt-8 lg:grid lg:grid-cols-12">
       <div className="col-start-2 col-end-3">
         <Aside title="From Our Blog" className="lg:w-48 mt-4" />
       </div>
 
       <section className="mb-12 col-start-5 col-end-13">
         <div className="relative">
-          <div className="absolute top-4 left-4 p-4 ml-4 mt-4 bg-white rounded-md h-52 w-44">
-            <p className="text-lightBlack text-md font-verybold font-bold mb-12">
+          <div className="absolute top-2 lg:top-4 lg:left-4 p-4 ml-4 mt-4 bg-white rounded-md h-36 lg:h-52 w-44">
+            <p className="text-lightBlack text-md font-verybold font-bold mb-0 lg:mb-12">
               Workwise raises $100m Series A funding from Salesforce.
             </p>
             <Link
@@ -31,8 +31,8 @@ const BlogIntro = () => {
         </div>
 
         <div className="relative">
-          <div className="absolute top-4 left-4 p-4 ml-4 mt-4 bg-white rounded-md h-52 w-44">
-            <p className="text-lightBlack text-md font-verybold font-bold mb-12">
+          <div className="absolute top-2 lg:top-4 lg:left-4 p-4 ml-4 mt-4 bg-white rounded-md h-36 lg:h-52 w-44">
+            <p className="text-lightBlack text-md font-verybold font-bold mb-0 lg:mb-12">
               Hermann Powe joins Workwise as new Head of Design
             </p>
             <Link

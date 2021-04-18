@@ -12,13 +12,14 @@ const SectionOne = () => {
             <img
               src={iPhone4x}
               alt="iphone"
-              className="lg:w-8/12 lg:z-20 lg:-mt-12 h-auto"
+              className="w-full lg:w-8/12 lg:z-20 lg:-mt-12 h-auto"
             />
             <div className="lg:mt-20">
               <Aside
                 title={
                   <p>
-                    Run your workplace <br /> with Workwise
+                    Run your <span className="lg:mr-24">workplace</span> with
+                    Workwise
                   </p>
                 }
                 text="The Workwise platform integrates with your workplace giving you and everyone in your organization a simple and seamless way to operate the workplace and its resources, and it

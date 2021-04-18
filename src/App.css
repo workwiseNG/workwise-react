@@ -29,6 +29,7 @@ body {
   top: 0;
   left: -100%;
   transition: 850ms;
+  z-index: 10;
 }
 
 .nav__menu.active {
@@ -118,11 +119,6 @@ body {
   border: 0.5px solid #0a459f;
 }
 
-.middle-border {
-  border-top: 0.5px solid #0a459f;
-  border-bottom: 0.5px solid #0a459f;
-}
-
 .btn-border {
   border: 1.5px solid #0a459f;
 }
@@ -187,10 +183,6 @@ body {
   font-size: 0.85rem;
 }
 
-.inner-picture {
-  margin-right: -4.61rem;
-}
-
 .track {
   letter-spacing: 0.2rem;
 }
@@ -210,5 +202,9 @@ body {
 @media screen and (min-width: 1024px) {
   .button {
     margin-left: 32rem;
+  }
+
+  .inner-picture {
+    margin-right: -4.61rem;
   }
 }
