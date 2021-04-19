@@ -1,7 +1,6 @@
 import NavbarThree from "../templates/NavbarThree";
 import secure from "../assets/secure.svg";
 import support from "../assets/support.svg";
-import privateDashboard from "../assets/privateDashboard.png";
 import wifi from "../assets/wifi.svg";
 import { Aside } from "../molecules";
 import { Footer } from "../organisms";
@@ -100,14 +99,6 @@ const DataSecurity = () => {
             malesuada vel lacus.
           </p>
         </section>
-      </div>
-
-      <div className="m-auto w-12/12 absolute z-10 ">
-        <img
-          src={privateDashboard}
-          alt="privateDashboard"
-          className="w-8/12 private"
-        />
       </div>
 
       <section className="m-auto w-7/12 mt-12 relative">

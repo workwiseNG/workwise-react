@@ -99,6 +99,11 @@ const MeetingRoom = () => {
             text="When proper controls and a structured policy for usage is implemented, usage of rooms can improve. A room booking system that provides insight into the usage of rooms and the patterns of bookings and cancellations can help management better understand their office and plan the office space for greater efficiencies. "
           />
         </div>
+        <div className="col-start-7 col-end-13 rounded-lg">
+          <div className="flex">
+            <img src={privateDashboard} alt="meetingtwo" className="" />
+          </div>
+        </div>
       </div>
 
       <div className="m-auto w-10/12 text-center mt-72 mb-28">
