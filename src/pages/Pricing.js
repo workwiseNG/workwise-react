@@ -20,7 +20,7 @@ const Pricing = () => {
         path="/tryforfree"
       />
 
-      <div className="m-auto w-10/12 my-32 flex justify-between">
+      <div className="m-auto w-10/12 my-32 lg:flex justify-between">
         <PriceCard
           name="Basic"
           status="Free"

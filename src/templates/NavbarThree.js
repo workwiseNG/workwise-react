@@ -48,7 +48,7 @@ const NavbarThree = ({ buttonText, path, text, className, textTwo }) => {
             <Sidebar />
           </div>
           <p
-            className={`text-center text-5xl text-white font-thin font-bold leading-snug pt-12 pb-4 ${className}`}
+            className={`text-center text-xl lg:text-5xl text-white font-thin font-bold leading-snug pt-12 pb-4 ${className}`}
           >
             {text}
           </p>

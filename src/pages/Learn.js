@@ -11,7 +11,7 @@ const Learn = () => {
         textTwo="Get more information and how-tos about Workwise"
       />
 
-      <section className="m-auto w-8/12 mt-24">
+      <section className="m-auto w-10/12 lg:w-8/12 mt-24">
         <p className=" text-primary text-xl font-bold">General FAQs</p>
         <LearnCard question="What is Workwise?" />
         <LearnCard question="What can I use Workwise for?" />
@@ -19,7 +19,7 @@ const Learn = () => {
         <LearnCard question="What are the terms and conditions on Workwise?" />
       </section>
 
-      <section className="m-auto w-8/12 mt-10 mb-24">
+      <section className="m-auto w-10/12 lg:w-8/12 mt-10 mb-24">
         <p className=" text-primary text-xl font-bold">Workwise Mobile App</p>
         <LearnCard question="Lorem ipsum dolor amit" />
         <LearnCard question="Lorem ipsum dolor amit" />

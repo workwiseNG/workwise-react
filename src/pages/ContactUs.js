@@ -12,14 +12,14 @@ const ContactUs = () => {
       </SectionWrapper>
 
       <section className="">
-        <div className="my-20 text-center">
+        <div className="my-10 lg:my-20 text-center">
           <p className="text-primary text-5xl font-thin font-semibold pb-2">
             Send us a message
           </p>
           <small>Get in touch with us</small>
         </div>
 
-        <section className="m-auto w-4/12">
+        <section className="m-auto w-10/12 lg:w-4/12">
           <Input label="Full name" placeholder="Osamudiamen" type="text" />
           <Input
             label="Email address"

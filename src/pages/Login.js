@@ -13,7 +13,7 @@ const Login = () => {
         </div>
 
         <div className="lg:grid grid-cols-12 lg:m-auto lg:w-10/12">
-          <section className="mt-12 col-start-1 col-end-5 lg:ml-4">
+          <section className="mt-6 lg:mt-12 col-start-1 col-end-5 lg:ml-4">
             <LogInIntro
               text={
                 <p>
@@ -26,7 +26,7 @@ const Login = () => {
             />
           </section>
 
-          <section className="slim-border col-start-7 col-end-13 rounded-md mt-12 px-10 py-6">
+          <section className="slim-border col-start-7 col-end-13 rounded-md mt-12 px-10 py-6 mb-16 lg:mb-0">
             <section className="flex items-center">
               <Input
                 label="Your company url"
