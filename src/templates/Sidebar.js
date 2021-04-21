@@ -1,45 +1,19 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import { SidebarData } from "../data/NavbarData";
-import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
+import SubMenu from "../templates/SubMenu";
 
-function Sidebar(props) {
-  const [sidebar, setSidebar] = useState(false);
-
-  const showSidebar = () => setSidebar(!sidebar);
-
+const Sidebar = ({ open }) => {
   return (
-    <>
-      <div className="navbar">
-        <Link to="#" className="menu__bars">
-          <BiMenuAltRight
-            onClick={showSidebar}
-            className="menu text-4xl lg:hidden"
-          />
-        </Link>
+    <div>
+      <div
+        className="w-1/2 bg-primary h-full justify-center fixed top-0 z-40"
+        style={{ left: open ? "0" : "-100%" }}
+      >
+        {SidebarData.map((item, index) => {
+          return <SubMenu item={item} key={index} />;
+        })}
       </div>
-      <nav className={sidebar ? "nav__menu active" : "nav__menu"}>
-        <ul className="nav__menu__items" onClick={showSidebar}>
-          <li className="navbar__toggle">
-            <Link to="#" className="menu-bars">
-              <AiOutlineClose className="menu" />
-            </Link>
-          </li>
-          {SidebarData.map((item, index) => {
-            return (
-              <li key={index} className={item.cName}>
-                <Link to={item.path}>
-                  {item.icon}
-                  <span>{item.title}</span>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-    </>
+    </div>
   );
-}
+};
 
 export default Sidebar;

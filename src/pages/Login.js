@@ -16,7 +16,7 @@ const Login = () => {
           <section className="mt-6 lg:mt-12 col-start-1 col-end-5 lg:ml-4">
             <LogInIntro
               text={
-                <p>
+                <p style={{ fontFamily: "Bw Nista Geometric DEMO" }}>
                   Enter your workwise company url and <br /> your company email
                   to gain access.
                 </p>
@@ -26,7 +26,7 @@ const Login = () => {
             />
           </section>
 
-          <section className="slim-border col-start-7 col-end-13 rounded-md mt-12 px-10 py-6 mb-16 lg:mb-0">
+          <section className="slim-border col-start-7 col-end-13 rounded-md mt-12 px-4 lg:px-10 py-4 lg:py-6 mb-16 lg:mb-0">
             <section className="flex items-center">
               <Input
                 label="Your company url"

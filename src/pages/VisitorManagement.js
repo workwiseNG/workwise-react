@@ -9,7 +9,6 @@ import iosStore from "../assets/iosStore.png";
 import visitor from "../assets/visitor.png";
 import visitorOne from "../assets/visitorTwo.png";
 import { BigText } from "../atoms";
-// import organization from "../assets/organizations.png";
 import { Footer } from "../organisms";
 
 const VisitorManagement = () => {
@@ -19,13 +18,13 @@ const VisitorManagement = () => {
         <Navbar />
       </SectionWrapper>
 
-      <div className="grid grid-cols-12 mt-12">
+      <div className="m-auto w-10/12 lg:w-full lg:grid lg:grid-cols-12 mt-12">
         <div className="col-start-3 col-end-7">
           <p className="uppercase text-primary text-small font-bold mb-4 track">
             Visitor Management
           </p>
-          <p className="text-primary font-bold leading-tight text-5xl">
-            Improve how you welcome your <br /> guests.
+          <p className="text-primary font-bold line text-3xl lg:text-5xl">
+            Improve how you welcome your guests.
           </p>
           <p className="text-sm leading-relaxed text-lightBlack my-4">
             Welcome guests with an easy-to-use visitor management <br />
@@ -53,8 +52,8 @@ const VisitorManagement = () => {
       </div>
 
       <section className="m-auto w-10/12 my-40">
-        <div className="flex">
-          <div className="slim-border rounded-r-none rounded-l-md mt-4 p-12 bg-white">
+        <div className="lg:flex">
+          <div className="border-slim border-primary rounded-md lg:rounded-r-none lg:rounded-l-md mt-4 lg:p-8 p-6 bg-white">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
               01. <br /> Visitors sign in on a mobile kiosk
             </p>
@@ -64,7 +63,7 @@ const VisitorManagement = () => {
             </p>
           </div>
 
-          <div className="middle-border lg:border-r-0 lg:border-l-0 mt-4 p-12 bg-white">
+          <div className="border-slim border-primary lg:border-0 lg:border-t-slim lg:border-b-slim rounded-md lg:rounded-none lg:p-8 p-6 mt-4 bg-white">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
               02. <br /> Workwise notifies their host
             </p>
@@ -74,7 +73,7 @@ const VisitorManagement = () => {
             </p>
           </div>
 
-          <div className="slim-border rounded-l-none rounded-r-md mt-4 p-12 bg-white">
+          <div className="border-slim border-primary rounded-md lg:rounded-l-none lg:rounded-r-md mt-4 lg:p-8 p-6 bg-white">
             <p className="font-verybold text-lightBlack text-sm font-bold my-4">
               03. <br /> The employee welcomes their visitor
             </p>
@@ -86,8 +85,8 @@ const VisitorManagement = () => {
         </div>
       </section>
 
-      <div className="lg:ml-28 mb-20">
-        <div className="grid grid-cols-12">
+      <div className="lg:ml-28 mb-20 mx-auto" style={{ width: "91%" }}>
+        <div className="lg:grid lg:grid-cols-12">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Package Delivery"
@@ -99,15 +98,11 @@ const VisitorManagement = () => {
             </button>
           </div>
           <div className="col-start-7 col-end-13">
-            <img
-              src={packageDelivery}
-              alt="dashboard"
-              className="mb-8 inner-picture"
-            />
+            <img src={packageDelivery} alt="dashboard" className="mb-8" />
           </div>
         </div>
 
-        <div className="grid grid-cols-12 mt-28">
+        <div className="lg:grid lg:grid-cols-12 mt-28">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Upcoming Appointment Display"
@@ -127,14 +122,14 @@ const VisitorManagement = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12 mt-28">
+        <div className="lg:grid lg:grid-cols-12 mt-28">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Feedback Channels"
               text="Effectively collect useful feedback from your visitors at the point of checking-out of your office premise. Visitors can rate how effective the service they received is."
               className="mb-12"
             />
-            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md">
+            <button class="bg-primary text-white text-sm font-bold py-4 px-8 mb-8 lg:mb-0 rounded-md">
               Get Started
             </button>
           </div>
@@ -145,7 +140,7 @@ const VisitorManagement = () => {
       </div>
 
       <div className="bg-gray">
-        <section className="m-auto w-4/6 pt-20 grid grid-cols-12">
+        <section className="m-auto w-4/6 pt-20 lg:grid lg:grid-cols-12">
           <div className="col-start-1 col-end-6">
             <Aside
               title="Do more with Workwise’s Visitor Management Feature"
@@ -166,7 +161,7 @@ const VisitorManagement = () => {
           </div>
         </section>
 
-        <section className="m-auto w-4/6 grid grid-cols-12 mt-8">
+        <section className="m-auto w-4/6 lg:grid lg:grid-cols-12 mt-8">
           <div className="col-start-1 col-end-4">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
               02. <br /> Make a great first impression
@@ -201,7 +196,7 @@ const VisitorManagement = () => {
           </div>
         </section>
 
-        <section className="m-auto w-4/6 grid grid-cols-12 mt-8">
+        <section className="m-auto w-4/6 lg:grid lg:grid-cols-12 mt-8">
           <div className="col-start-1 col-end-4">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
               05. <br /> Easily identify unauthorized visitors

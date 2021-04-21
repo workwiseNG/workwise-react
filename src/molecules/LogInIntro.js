@@ -16,7 +16,11 @@ const LogInIntro = ({ text, title, className, bgColor }) => {
       >
         {title}
       </p>
-      <SmallText text={text} className="mt-4" />
+      <SmallText
+        text={text}
+        className="mt-4"
+        style={{ fontFamily: "Bw Nista Geometric DEMO" }}
+      />
     </div>
   );
 };
