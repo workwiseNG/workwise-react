@@ -70,6 +70,10 @@ body {
   width: 24rem;
 }
 
+br {
+  display: none;
+}
+
 .input-right {
   margin-right: 0.9rem;
 }
@@ -161,5 +165,9 @@ body {
   .secure {
     height: 16rem;
     width: 31rem;
+  }
+
+  br {
+    display: block;
   }
 }

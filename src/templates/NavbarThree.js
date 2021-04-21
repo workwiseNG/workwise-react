@@ -45,10 +45,10 @@ const NavbarThree = ({ buttonText, path, text, className, textTwo }) => {
         </header>
         <div className="lg:m-auto w-11/12">
           <div className="lg:hidden -mt-8 flex items-center justify-end">
-            <Harmburger color="text-white" />
+            <Harmburger color="text-white" className="ml-12 lg:ml-0" />
           </div>
           <p
-            className={`text-center text-xl lg:text-5xl text-white font-thin font-bold leading-snug pt-12 pb-4 ${className}`}
+            className={`text-center text-2xl lg:text-5xl text-white font-thin font-bold leading-snug pt-12 pb-4 ${className}`}
           >
             {text}
           </p>

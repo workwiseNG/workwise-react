@@ -48,7 +48,7 @@ const NavbarTwo = ({ text, element }) => {
             <Harmburger color="text-white" />
           </div>
         </div>
-        <p className="text-center text-5xl text-white font-thin py-24">
+        <p className="text-center text-2xl lg:text-5xl text-white font-thin py-16 lg:py-24">
           {text}
         </p>
         <p className="text-white text-center text-sm -mt-14 pb-4">{element}</p>

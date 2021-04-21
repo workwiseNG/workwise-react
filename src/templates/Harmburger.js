@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
-const Harmburger = ({ color }) => {
+const Harmburger = ({ color, className }) => {
   const [open, setOpen] = useState(false);
   const showSidebar = () => setOpen(!open);
   return (
@@ -15,7 +15,7 @@ const Harmburger = ({ color }) => {
           stroke="currentColor"
           width="2rem"
           onClick={showSidebar}
-          className={color}
+          className={`${color} ${className}`}
         >
           <path
             strokeLinecap="round"
