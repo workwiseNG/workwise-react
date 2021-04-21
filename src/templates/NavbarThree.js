@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { NavbarData } from "../data/NavData";
-import Sidebar from "./Sidebar";
+import Harmburger from "./Harmburger";
 import whiteLogo from "../assets/whitelogo.svg";
 import { Dropdown } from "../atoms";
 import { SectionWrapper } from "../layout/SectionWrapper";
@@ -44,8 +44,8 @@ const NavbarThree = ({ buttonText, path, text, className, textTwo }) => {
           </ul>
         </header>
         <div className="lg:m-auto w-11/12">
-          <div className="-mt-14 flex justify-end">
-            <Sidebar />
+          <div className="lg:hidden -mt-8 flex items-center justify-end">
+            <Harmburger color="text-white" />
           </div>
           <p
             className={`text-center text-xl lg:text-5xl text-white font-thin font-bold leading-snug pt-12 pb-4 ${className}`}

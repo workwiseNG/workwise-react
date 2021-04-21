@@ -15,9 +15,9 @@ const DataSecurity = () => {
         className="lg:m-auto w-7/12"
       />
 
-      <section className="m-auto w-10/12 mt-20">
-        <div className="flex">
-          <section className="slim-border rounded-r-none rounded-l-md p-8">
+      <section className="m-auto w-11/12 lg:w-10/12 mt-20">
+        <div className="lg:flex">
+          <section className="border-slim border-primary rounded-md lg:rounded-r-none lg:rounded-l-md p-8 mb-10 lg:mb-0">
             <div>
               <img src={secure} alt="secure" className="w-2/12" />
             </div>
@@ -33,7 +33,7 @@ const DataSecurity = () => {
             </p>
           </section>
 
-          <section className="slim-border lg:border-r-0 lg:border-l-0 p-8">
+          <section className="border-slim border-primary lg:border-0 lg:border-t-slim lg:border-b-slim rounded-md lg:rounded-none mb-10 lg:mb-0 p-8">
             <div>
               <img src={wifi} alt="secure" className="w-2/12" />
             </div>
@@ -49,7 +49,7 @@ const DataSecurity = () => {
             </p>
           </section>
 
-          <section className="slim-border rounded-l-none rounded-r-md p-8">
+          <section className="border-slim border-primary rounded-md lg:rounded-l-none lg:rounded-r-md mb-10 lg:mb-0 p-8">
             <div>
               <img src={support} alt="secure" className="w-2/12" />
             </div>
@@ -68,7 +68,7 @@ const DataSecurity = () => {
       </section>
 
       <div className="bg-gray">
-        <section className="m-auto w-7/12 mt-12">
+        <section className="m-auto w-10/12 lg:w-7/12 mt-12">
           <img src={secure} alt="secure" className="pt-12 mb-12" />
           <Aside title="Keeping your Data Secure" />
           <p className="text-sm leading-relaxed text-lightBlack my-4">
@@ -101,7 +101,7 @@ const DataSecurity = () => {
         </section>
       </div>
 
-      <section className="m-auto w-7/12 mt-12 relative">
+      <section className="m-auto w-10/12 lg:w-7/12 mt-12">
         <img src={wifi} alt="secure" className="pt-12 mb-12" />
         <Aside title="Protecting Your Privacy" />
         <p className="text-sm leading-relaxed text-lightBlack my-4">
@@ -133,7 +133,7 @@ const DataSecurity = () => {
       </section>
 
       <div className="bg-gray">
-        <section className="m-auto w-7/12 mt-12">
+        <section className="m-auto w-10/12 lg:w-7/12 mt-12">
           <img src={support} alt="secure" className="pt-12 mb-12" />
           <Aside title="Supporting Compliance Needs" />
           <p className="text-sm leading-relaxed text-lightBlack my-4">

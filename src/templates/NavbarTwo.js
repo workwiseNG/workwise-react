@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { NavbarData } from "../data/NavData";
-import Sidebar from "./Sidebar";
 import whiteLogo from "../assets/whitelogo.svg";
 import { SectionWrapper } from "../layout/SectionWrapper";
 import { Dropdown } from "../atoms";
+import Harmburger from "./Harmburger";
 
 const NavbarTwo = ({ text, element }) => {
   return (
@@ -44,8 +44,8 @@ const NavbarTwo = ({ text, element }) => {
           </ul>
         </header>
         <div className="lg:m-auto w-11/12">
-          <div className="-mt-14 flex justify-end">
-            <Sidebar />
+          <div className="lg:hidden -mt-8 flex items-center justify-end">
+            <Harmburger color="text-white" />
           </div>
         </div>
         <p className="text-center text-5xl text-white font-thin py-24">
