@@ -85,7 +85,7 @@ const VisitorManagement = () => {
         </div>
       </section>
 
-      <div className="lg:ml-28 mb-20 mx-auto" style={{ width: "91%" }}>
+      <div className="lg:ml-28 mb-20 m-auto w-10/12 lg:w-full">
         <div className="lg:grid lg:grid-cols-12">
           <div className="col-start-2 col-end-6">
             <Aside

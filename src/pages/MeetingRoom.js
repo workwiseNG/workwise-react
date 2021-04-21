@@ -23,12 +23,12 @@ const MeetingRoom = () => {
         <Navbar />
       </SectionWrapper>
 
-      <div className="grid grid-cols-12 mt-12">
+      <div className="m-auto w-10/12 lg:w-full lg:grid lg:grid-cols-12 mt-12">
         <div className="col-start-3 col-end-8">
           <p className="uppercase text-primary text-small font-bold mb-4 track">
             Meeting Rooms
           </p>
-          <p className="text-primary font-bold leading-tight text-5xl">
+          <p className="text-primary font-bold line text-3xl lg:text-5xl">
             Book meeting rooms in less than 5 minutes
           </p>
           <p className="text-sm leading-relaxed text-lightBlack my-4">
@@ -36,7 +36,7 @@ const MeetingRoom = () => {
             solution that keeps your workplace safe and saves your <br />
             receptionist time and energy.
           </p>
-          <div className="flex items-center mt-10">
+          <div className="flex items-center my-10 lg:mt-10">
             <img
               src={googlePlay}
               alt="googlePlay"
@@ -51,62 +51,64 @@ const MeetingRoom = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-12 mt-20">
-        <div className="col-start-2 col-end-6">
-          <Aside
-            title="Eliminate conflicts & double booking automatically"
-            text="A proper room booking system will automatically detect and prevent users from booking rooms that already have meetings. This pre-emptive method of detection and prevention eliminates majority of office productivity related problem of having to find a vacant room. "
-          />
-          <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md mt-10">
-            Get Started
-          </button>
-        </div>
-        <div className="col-start-7 col-end-13">
-          <img
-            src={privateDashboard}
-            alt="privateDashboard"
-            className="inner-picture"
-          />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-12 mt-20">
-        <div className="col-start-2 col-end-6">
-          <Aside
-            title="Multiple methods of booking"
-            text="Choosing a room booking system that provides various avenues for booking can simplify the process of finding and reserving a room even easier. From web based interface that can be accessed through any browser to a mobile application or a wall-mounted room display panel can provide staff who are always on the move to be able to find and reserve rooms. "
-          />
-          <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md mt-10">
-            Get Started
-          </button>
-        </div>
-        <div className="col-start-7 col-end-13 rounded-lg relative">
-          <div className="flex">
-            <img
-              src={dashTwo}
-              alt="dashTwo"
-              className="absolute z-10 w-4/12 top-24 -left-12"
+      <div className="m-auto w-10/12 lg:w-full">
+        <div className="lg:grid lg:grid-cols-12 mt-20">
+          <div className="col-start-2 col-end-6">
+            <Aside
+              title="Eliminate conflicts & double booking automatically"
+              text="A proper room booking system will automatically detect and prevent users from booking rooms that already have meetings. This pre-emptive method of detection and prevention eliminates majority of office productivity related problem of having to find a vacant room. "
             />
-            <img src={meetingtwo} alt="meetingtwo" className="" />
+            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md my-10 lg:mt-10">
+              Get Started
+            </button>
+          </div>
+          <div className="col-start-7 col-end-13">
+            <img
+              src={privateDashboard}
+              alt="privateDashboard"
+              className="inner-picture"
+            />
+          </div>
+        </div>
+
+        <div className="lg:grid lg:grid-cols-12 mt-20">
+          <div className="col-start-2 col-end-6">
+            <Aside
+              title="Multiple methods of booking"
+              text="Choosing a room booking system that provides various avenues for booking can simplify the process of finding and reserving a room even easier. From web based interface that can be accessed through any browser to a mobile application or a wall-mounted room display panel can provide staff who are always on the move to be able to find and reserve rooms. "
+            />
+            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md my-10 lg:mt-10">
+              Get Started
+            </button>
+          </div>
+          <div className="col-start-7 col-end-13 rounded-lg relative">
+            <div className="flex">
+              <img
+                src={dashTwo}
+                alt="dashTwo"
+                className="absolute z-10 w-4/12 top-24 -left-12"
+              />
+              <img src={meetingtwo} alt="meetingtwo" className="" />
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:grid lg:grid-cols-12 mt-40">
+          <div className="col-start-2 col-end-6 mb-8 lg:mb-0">
+            <Aside
+              title="Better usage of rooms"
+              text="When proper controls and a structured policy for usage is implemented, usage of rooms can improve. A room booking system that provides insight into the usage of rooms and the patterns of bookings and cancellations can help management better understand their office and plan the office space for greater efficiencies. "
+            />
+          </div>
+          <div className="col-start-7 col-end-13 rounded-lg">
+            <div className="flex">
+              <img src={privateDashboard} alt="meetingtwo" className="" />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-12 mt-40">
-        <div className="col-start-2 col-end-6">
-          <Aside
-            title="Better usage of rooms"
-            text="When proper controls and a structured policy for usage is implemented, usage of rooms can improve. A room booking system that provides insight into the usage of rooms and the patterns of bookings and cancellations can help management better understand their office and plan the office space for greater efficiencies. "
-          />
-        </div>
-        <div className="col-start-7 col-end-13 rounded-lg">
-          <div className="flex">
-            <img src={privateDashboard} alt="meetingtwo" className="" />
-          </div>
-        </div>
-      </div>
-
-      <div className="m-auto w-10/12 text-center mt-72 mb-28">
+      <div className="m-auto w-10/12 text-center mt-36 lg:mt-72 mb-28">
         <HeaderTwo
           text="Find and reserve spaces at your desk or on the go."
           className=" lg:mt-12 lg:text-7xl font-verybold font-extrabold"
@@ -114,8 +116,8 @@ const MeetingRoom = () => {
       </div>
 
       <section className="m-auto w-10/12 mt-20">
-        <div className="flex">
-          <section className="slim-border rounded-r-none rounded-l-md p-8">
+        <div className="lg:flex">
+          <section className="border-slim border-primary rounded-md lg:rounded-r-none lg:rounded-l-md p-8 mb-10 lg:mb-0">
             <div>
               <img src={calendar} alt="calendar" className="meeting-icon" />
             </div>
@@ -128,7 +130,7 @@ const MeetingRoom = () => {
             </p>
           </section>
 
-          <section className="slim-border lg:border-r-0 lg:border-l-0 p-8">
+          <section className="border-slim border-primary lg:border-0 lg:border-t-slim lg:border-b-slim rounded-md lg:rounded-none mb-10 lg:mb-0 p-8">
             <div>
               <img src={app} alt="calendar" className="w-1/12" />
             </div>
@@ -141,7 +143,7 @@ const MeetingRoom = () => {
             </p>
           </section>
 
-          <section className="slim-border rounded-l-none rounded-r-md p-8">
+          <section className="border-slim border-primary rounded-md lg:rounded-l-none lg:rounded-r-md mb-10 lg:mb-0 p-8">
             <div>
               <img src={tablet} alt="meetingIpad" className="meeting-icon" />
             </div>

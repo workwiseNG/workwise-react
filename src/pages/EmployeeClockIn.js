@@ -19,12 +19,12 @@ const EmployeeClockIn = () => {
         <Navbar />
       </SectionWrapper>
 
-      <div className="grid grid-cols-12 mt-12">
+      <div className="m-auto w-10/12 lg:grid lg:grid-cols-12 mt-12">
         <div className="col-start-3 col-end-7">
           <p className="uppercase text-primary text-small font-bold mb-4 track">
             Employee-Clock-In
           </p>
-          <p className="text-primary font-bold leading-tight text-5xl">
+          <p className="text-primary font-bold leading-tight text-3xl lg:text-5xl">
             Manage clock-in and out with your employees.
           </p>
           <p className="text-sm leading-relaxed text-lightBlack my-4">
@@ -32,7 +32,7 @@ const EmployeeClockIn = () => {
             geofencing time management and clock-in feature available in our app
             and dashboard.
           </p>
-          <div className="flex items-center mt-10">
+          <div className="flex items-center lg:my-10 mt-10">
             <img
               src={googlePlay}
               alt="googlePlay"
@@ -47,41 +47,43 @@ const EmployeeClockIn = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-12 mt-36 mb-52">
-        <div className="col-start-3 col-end-6">
-          <Aside
-            title="Geo Fencing"
-            text="Your employee is immediately notified to clock-in if they’re around the work premises. They are also reminded to clock-out when they outside the work premises."
-          />
-          <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md mt-10">
-            Get Started
-          </button>
-        </div>
-        <div className="col-start-8 col-end-13 rounded-lg relative">
-          <div className="flex">
-            <img src={clockInOne} alt="dashTwo" className="w-1/2 -mt-28" />
-            <img
-              src={clockInTwo}
-              alt="meetingtwo"
-              className="w-1/2 absolute z-10 right-16"
+      <div className="m-auto w-10/12 lg:w-full">
+        <div className="lg:grid lg:grid-cols-12 mt-16 lg:mt-36 mb-52">
+          <div className="col-start-3 col-end-6 mb-8 lg:mb-0">
+            <Aside
+              title="Geo Fencing"
+              text="Your employee is immediately notified to clock-in if they’re around the work premises. They are also reminded to clock-out when they outside the work premises."
             />
+            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md mt-10">
+              Get Started
+            </button>
+          </div>
+          <div className="col-start-8 col-end-13 rounded-lg relative">
+            <div className="flex">
+              <img src={clockInOne} alt="dashTwo" className="w-1/2 -mt-28" />
+              <img
+                src={clockInTwo}
+                alt="meetingtwo"
+                className="w-1/2 absolute z-10 right-16"
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="grid grid-cols-12 my-36">
-        <div className="col-start-3 col-end-6">
-          <Aside
-            title="Track Employee Attendance Log"
-            text="Easily track your employees work attendance from a glance on your screen. You can filter and search by name/date."
-          />
-          <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md mt-10">
-            Get Started
-          </button>
-        </div>
-        <div className="col-start-7 col-end-13 rounded-lg">
-          <div className="flex">
-            <img src={clockInThree} alt="dashTwo" className="inner-picture" />
+        <div className="lg:grid lg:grid-cols-12 my-36">
+          <div className="col-start-3 col-end-6">
+            <Aside
+              title="Track Employee Attendance Log"
+              text="Easily track your employees work attendance from a glance on your screen. You can filter and search by name/date."
+            />
+            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md my-10 lg:mt-10">
+              Get Started
+            </button>
+          </div>
+          <div className="col-start-7 col-end-13 rounded-lg">
+            <div className="flex">
+              <img src={clockInThree} alt="dashTwo" className="inner-picture" />
+            </div>
           </div>
         </div>
       </div>
