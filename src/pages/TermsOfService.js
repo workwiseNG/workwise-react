@@ -5,7 +5,7 @@ const TermsOfService = () => {
   return (
     <div>
       <NavbarTwo text="Terms of Service" />
-      <section className="m-auto w-8/12 mt-40">
+      <section className="m-auto w-10/12 lg:w-8/12 mt-20 lg:mt-40">
         <p className="text-sm leading-relaxed text-black mb-8">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae,
           repudiandae possimus numquam veniam blanditiis ex voluptate laboriosam

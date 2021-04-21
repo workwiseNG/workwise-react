@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <NavbarTwo text="Privacy Policy" />
-      <section className="m-auto w-8/12 mt-40">
+      <section className="m-auto w-10/12 lg:w-8/12 mt-20 lg:mt-40">
         <p className="text-sm leading-relaxed text-lightBlack my-4">
           Welcome to the web site (the “Site”) of Workwise, Inc. (“Workwise”,
           “we”, “us” and/or “our”). This Site is operated by Workwise and has
@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
         </p>
       </section>
       <div className="bg-gray py-16">
-        <section className="m-auto w-8/12">
+        <section className="m-auto w-10/12 lg:w-8/12">
           <Aside title="Information We Collect" />
 
           <p className="text-sm leading-relaxed text-lightBlack mt-4">
@@ -127,7 +127,7 @@ const PrivacyPolicy = () => {
           </p>
         </section>
       </div>
-      <section className="m-auto w-8/12 mt-16">
+      <section className="m-auto w-10/12 lg:w-8/12 mt-16">
         <Aside title="Our Use of Personal Data and Other Information" />
         <p className="text-sm leading-relaxed text-lightBlack mt-6">
           Workwise uses the Personal Data you provide in a manner that is
@@ -182,7 +182,7 @@ const PrivacyPolicy = () => {
       </section>
 
       <div className="bg-gray mt-16 mb-32">
-        <section className="m-auto w-8/12 py-16">
+        <section className="m-auto w-10/12 lg:w-8/12 py-16">
           <Aside title="Contact Information" />
           <p className="text-sm leading-relaxed text-lightBlack mt-6">
             This is simply a demo privacy page. Ensure you fill in the content
