@@ -105,10 +105,6 @@ body {
   border: 0.14px solid #808080;
 }
 
-.career-width {
-  width: 48%;
-}
-
 .meeting-icon {
   width: 12%;
 }
@@ -152,5 +148,9 @@ body {
 
   .line {
     line-height: 3.5rem;
+  }
+
+  .career-width {
+    width: 48%;
   }
 }

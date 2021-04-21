@@ -12,8 +12,8 @@ const RequestDemo = () => {
       <SectionWrapper>
         <Navbar image={logo} />
       </SectionWrapper>
-      <div className="lg:mt-12 lg:flex mb-24">
-        <section className="lg:ml-24 lg:mr-64">
+      <div className="mt-12 lg:flex mb-24">
+        <section className="ml-10 lg:ml-24 lg:mr-64">
           <LogInIntro
             title="To schedule a demo,kindly fill our form"
             bgColor="#0A459F"
@@ -21,7 +21,7 @@ const RequestDemo = () => {
           />
         </section>
 
-        <section className="slim-border rounded-md m-auto w-5/12  px-8 py-2">
+        <section className="slim-border rounded-md m-auto w-10/12 lg:w-5/12 px-8 py-4 lg:py-2">
           <Input label="First name" placeholder="Osamudiamen" type="text" />
           <Input label="Last name" placeholder="Imaseun" type="text" />
           <Input

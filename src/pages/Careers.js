@@ -6,12 +6,12 @@ const Careers = () => {
   return (
     <div>
       <NavbarTwo text="Careers" element="Join our amazing team at Workwise" />
-      <section className="m-auto w-10/12 mt-32">
+      <section className="m-auto w-10/12 mt-20 lg:mt-32">
         <p className="text-primary text-2xl font-bold">Open Positions</p>
       </section>
 
-      <section className="m-auto w-10/12 mt-8 flex justify-between">
-        <div className="slim-ash-border flex justify-between p-6 career-width  rounded-lg">
+      <section className="m-auto w-10/12 mt-8 lg:flex lg:justify-between">
+        <div className="slim-ash-border flex justify-between p-6 career-width rounded-lg mb-8 lg:mb-0">
           <p className="text-lightBlack text-sm font-verybold font-bold">
             Engineering Role
           </p>
@@ -30,8 +30,8 @@ const Careers = () => {
         </div>
       </section>
 
-      <section className="m-auto w-10/12 mt-8 flex justify-between">
-        <div className="slim-ash-border flex justify-between p-6 career-width  rounded-lg">
+      <section className="m-auto w-10/12 mt-8 lg:flex justify-between">
+        <div className="slim-ash-border flex justify-between p-6 career-width rounded-lg mb-8 lg:mb-0">
           <p className="text-lightBlack text-sm font-verybold font-bold">
             Finance
           </p>
@@ -50,8 +50,8 @@ const Careers = () => {
         </div>
       </section>
 
-      <section className="m-auto w-10/12 mt-8 flex justify-between mb-24">
-        <div className="slim-ash-border flex justify-between p-6 career-width  rounded-lg">
+      <section className="m-auto w-10/12 mt-8 lg:flex justify-between mb-24">
+        <div className="slim-ash-border flex justify-between p-6 career-width rounded-lg mb-8 lg:mb-0">
           <p className="text-lightBlack text-sm font-verybold font-bold">
             Design
           </p>

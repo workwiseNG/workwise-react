@@ -10,7 +10,7 @@ const AboutUs = () => {
   return (
     <section>
       <NavbarTwo text=" About Us" />
-      <section className="m-auto w-8/12 mt-40">
+      <section className="m-auto w-10/12 lg:w-8/12 mt-20 lg:mt-40">
         <p className="text-primary text-xl font-normal leading-relaxed mb-8">
           The Workwise brand was designed and developed in 2019. The vision of
           our Company through the Workwise brand is to make every employee in
@@ -38,13 +38,13 @@ const AboutUs = () => {
 
       <div className="bg-gray">
         <div className="m-auto w-10/12">
-          <section className="mt-32">
-            <div className="grid grid-cols-12 pt-24">
+          <section className="mt-28 lg:mt-32">
+            <div className="lg:grid lg:grid-cols-12 pt-12 lg:pt-24">
               <div className="col-start-2 col-end-7">
                 <img
                   src={founderTwo}
                   alt="founderTwo"
-                  className="w-full rounded-lg"
+                  className="w-3/4 lg:w-full rounded-lg"
                 />
               </div>
               <div className="col-start-8 col-end-13">
@@ -67,12 +67,12 @@ const AboutUs = () => {
           </section>
 
           <section>
-            <div className="grid grid-cols-12 pb-24 mt-16">
+            <div className="lg:grid lg:grid-cols-12 pb-12 lg:pb-24 mt-16">
               <div className="col-start-2 col-end-7">
                 <img
                   src={ctoTwo}
                   alt="ctoTwo"
-                  className=" w-1/2 lg:w-full lg:mt-0"
+                  className=" w-3/4 lg:w-full lg:mt-0"
                 />
               </div>
               <div className="col-start-8 col-end-13">
@@ -110,7 +110,7 @@ const AboutUs = () => {
         </p>
       </section>
 
-      <div className="m-auto w-8/12">
+      <div className="m-auto w-10/12 lg:w-8/12">
         <BlogIntro />
       </div>
       <Footer />
