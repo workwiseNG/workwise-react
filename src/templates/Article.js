@@ -5,13 +5,13 @@ const Article = () => {
   return (
     <div>
       <div className="relative">
-        <div className="absolute top-4 left-4 p-4 ml-4 mt-4 bg-white rounded-md h-52 w-44">
-          <p className="text-black font-extrabold mb-12">
+        <div className="absolute top-2 lg:top-4 lg:left-4 p-4 ml-4 mt-4 bg-white rounded-md h-32 lg:h-52 w-44">
+          <p className="text-black font-extrabold text-sm lg:text-base mb-0 lg:mb-12">
             Workwise raises $100m Series A funding from Salesforce.
           </p>
           <Link
             to="/blogarticle"
-            className="text-primary underline text-base font-semibold"
+            className="text-primary underline text-sm lg:text-base font-semibold"
           >
             Read full article
           </Link>

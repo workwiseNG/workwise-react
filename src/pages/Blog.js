@@ -11,7 +11,7 @@ const Blog = () => {
         <Navbar />
       </SectionWrapper>
 
-      <section className="m-auto w-9/12 mt-20">
+      <section className="m-auto w-10/12 lg:w-9/12 mt-10 lg:mt-20">
         <Article />
 
         <section className="lg:grid grid-cols-8 gap-10 mb-8">

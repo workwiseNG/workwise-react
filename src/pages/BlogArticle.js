@@ -10,8 +10,8 @@ const BlogArticle = () => {
         <Navbar />
       </SectionWrapper>
 
-      <section className="m-auto w-9/12 mt-20">
-        <p className="text-lightBlack font-bold font-verybold text-6xl leading-tight">
+      <section className="m-auto w-10/12 lg:w-9/12 mt-12 lg:mt-20">
+        <p className="text-lightBlack font-bold font-verybold text-3xl lg:text-6xl leading-tight">
           Workwise raises $100m <br /> Series A funding from Salesforce.
         </p>
         <img src={blog} alt="blog" className="py-12" />
