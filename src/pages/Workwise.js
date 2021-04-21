@@ -24,7 +24,7 @@ const Workwise = () => {
         }
       />
 
-      <section className="m-auto w-9/12 my-36 grid grid-cols-12">
+      <section className="m-auto w-9/12 my-36 lg:grid lg:grid-cols-12">
         <div className="col-start-1 col-end-6">
           <section
             className="rounded-t-lg px-12 pt-16"
@@ -45,7 +45,7 @@ const Workwise = () => {
           </div>
         </div>
         <div className="col-start-7 col-end-13">
-          <Aside title="Engage Your Employees" className="ml-24 my-12" />
+          <Aside title="Engage Your Employees" className="lg:ml-24 my-12" />
           <div className="rounded-t-lg" style={{ backgroundColor: "#FAFAFA" }}>
             <img src={workwiseTwo} alt="workwise" className="w-full" />
           </div>
@@ -60,7 +60,7 @@ const Workwise = () => {
         </div>
       </section>
 
-      <section className="m-auto w-9/12 my-36 grid grid-cols-12">
+      <section className="m-auto w-9/12 my-36 lg:grid lg:grid-cols-12">
         <div className="col-start-1 col-end-6">
           <Aside
             title={
@@ -103,7 +103,7 @@ const Workwise = () => {
         </div>
       </section>
 
-      <section className="m-auto w-9/12 my-36 grid grid-cols-12">
+      <section className="m-auto w-9/12 my-36 lg:grid lg:grid-cols-12">
         <div className="col-start-1 col-end-6">
           <section
             className="rounded-t-lg"
@@ -127,7 +127,8 @@ const Workwise = () => {
           <Aside
             title={
               <p>
-                Create a Home for <br /> Company’s Resources
+                Create a Home <span className="lg:mr-24">for</span> Company’s
+                Resources
               </p>
             }
             className="my-12"

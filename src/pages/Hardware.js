@@ -20,12 +20,12 @@ const Hardware = () => {
         buttonText="Try for free"
         path="/tryforfree"
       />
-      <section className="m-auto w-10/12 mt-40">
+      <section className="m-auto w-10/12 mt-20 lg:mt-40">
         <img src={hardware} alt="hardware" />
       </section>
 
-      <div className="lg:flex justify-between m-auto w-9/12 mt-40 lg:mb-24">
-        <section className="mt-12 w-1/2">
+      <div className="lg:flex justify-between m-auto w-11/12 lg:w-9/12 mt-20 lg:mt-40 mb-24">
+        <section className="mt-12 w-full lg:w-1/2">
           <HardwareImage image={ipad} title="IPad" className="mb-12" />
           <HardwareImage
             image={tablet}
@@ -34,7 +34,7 @@ const Hardware = () => {
           />
         </section>
 
-        <section className="mt-12 w-1/2">
+        <section className="mt-12 w-full lg:w-1/2">
           <HardwareImage image={windfall} title="Windfall Stand" />
           <HardwareImage
             image={printer}

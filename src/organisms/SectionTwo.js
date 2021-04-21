@@ -9,7 +9,7 @@ const SectionTwo = () => {
   return (
     <div>
       <SectionWrapper>
-        <div className="mt-64">
+        <div className="lg:mt-64">
           <HeaderTwo
             text="Secure tools to help you run the workplace."
             className="text-center lg:text-7xl lg:my-32 font-verybold font-bold lg:ml-28 lg:max-w-4xl"
@@ -18,7 +18,7 @@ const SectionTwo = () => {
       </SectionWrapper>
 
       <div className="lg:ml-28 max-w-6xl mx-auto" style={{ width: "90%" }}>
-        <div className="lg:grid lg:grid-cols-12 mt-96 lg:mt-0">
+        <div className="lg:grid lg:grid-cols-12 mt-40 lg:mt-96">
           <div className="col-start-2 col-end-6">
             <Aside
               title={
