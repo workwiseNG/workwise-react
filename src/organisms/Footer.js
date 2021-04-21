@@ -67,7 +67,8 @@ const Footer = () => {
                   <img
                     src={playStore}
                     alt="playStore"
-                    className="w-48 lg:w-36 mb-2 -ml-4 object-cover lg:mt-8"
+                    className="lg:w-36 -ml-2 mb-2 lg:mt-8"
+                    style={{ width: "57%" }}
                   />
                   <img
                     src={ios}

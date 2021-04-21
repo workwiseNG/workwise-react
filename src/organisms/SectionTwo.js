@@ -18,7 +18,7 @@ const SectionTwo = () => {
       </SectionWrapper>
 
       <div className="lg:ml-28 max-w-6xl mx-auto" style={{ width: "90%" }}>
-        <div className="lg:grid lg:grid-cols-12 mt-40 lg:mt-96">
+        <div className="lg:grid lg:grid-cols-12 easily lg:mt-96">
           <div className="col-start-2 col-end-6">
             <Aside
               title={
@@ -44,7 +44,7 @@ const SectionTwo = () => {
         </div>
 
         <div className="lg:grid lg:grid-cols-12 mt-28">
-          <div className="col-start-2 col-end-6">
+          <div className="lg:col-start-2 lg:col-end-6">
             <Aside
               title={
                 <p>
