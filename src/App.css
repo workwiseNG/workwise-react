@@ -145,6 +145,10 @@ br {
   margin-left: 23rem;
 }
 
+.easily {
+  margin-top: 40rem;
+}
+
 @media screen and (min-width: 1024px) {
   .button {
     margin-left: 32rem;
@@ -168,7 +172,7 @@ br {
   }
 
   .easily {
-    margin-top: 45rem;
+    margin-top: 10rem;
   }
 
   br {
