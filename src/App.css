@@ -66,8 +66,12 @@ body {
 }
 
 .secure {
-  height: 16rem;
-  width: 31rem;
+  height: 14rem;
+  width: 24rem;
+}
+
+.input-right {
+  margin-right: 0.9rem;
 }
 
 .nav-links {
@@ -152,5 +156,10 @@ body {
 
   .career-width {
     width: 48%;
+  }
+
+  .secure {
+    height: 16rem;
+    width: 31rem;
   }
 }

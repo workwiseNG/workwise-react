@@ -21,8 +21,8 @@ const SecureCode = () => {
           />
         </section>
 
-        <section className="border border-primary rounded-lg mt-12 secure">
-          <div className="p-12">
+        <section className="border border-primary rounded-lg mt-12 secure mb-12 lg:mb-0">
+          <div className="p-6 lg:p-12">
             <InputTwo value="1" />
             <InputTwo value="2" />
             <InputTwo value="2" />
