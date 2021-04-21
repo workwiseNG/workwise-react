@@ -20,7 +20,7 @@ const TryForFree = () => {
         </div>
 
         <div className="lg:mt-12 lg:grid grid-cols-12 lg:m-auto lg:w-10/12 mb-24">
-          <section className="col-start-1 col-end-5 lg:ml-4">
+          <section className="col-start-1 col-end-5 lg:ml-4 mt-12 lg:mt-0">
             <LogInIntro
               title={
                 <p>
@@ -34,7 +34,7 @@ const TryForFree = () => {
                     Password must be at least 8 characters and contain at least
                     one capital letter, one lower case letter and one number.
                   </p>
-                  <p className="mt-4">
+                  <p className="my-4 lg:mt-4">
                     By clicking “Next” you agree to our <br />
                     <Link className="text-primary">
                       Terms of Service, Privacy Policy
@@ -46,7 +46,7 @@ const TryForFree = () => {
             />
           </section>
 
-          <section className="slim-border col-start-7 col-end-13 rounded-md mb-24 px-8 py-4">
+          <section className="slim-border col-start-7 col-end-13 rounded-md mb-24 px-6 lg:px-8 pb-24 pt-4 lg:py-4">
             <Input
               label="Your company email"
               placeholder="osa@mudia.ment"

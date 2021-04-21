@@ -14,7 +14,7 @@ const YourCompany = () => {
         </div>
 
         <div className="lg:mt-12 lg:grid grid-cols-12 lg:m-auto lg:w-10/12">
-          <section className="col-start-1 col-end-6 lg:ml-4">
+          <section className="col-start-1 col-end-6 lg:ml-4 mt-12 lg:mt-0">
             <LogInIntro
               title={
                 <p>
@@ -26,7 +26,7 @@ const YourCompany = () => {
             />
           </section>
 
-          <section className="slim-border rounded-md col-start-7 col-end-13 py-4 px-8 mb-24">
+          <section className="slim-border rounded-md col-start-7 col-end-13 py-4 px-6 lg:px-8 mb-24">
             <Input
               label="Your company name"
               placeholder="osa@mudia.ment"
@@ -44,12 +44,12 @@ const YourCompany = () => {
 
             <div className="flex">
               <Link to="/tryforfree">
-                <button class="bg-white text-primary border border-primary text-sm my-4 font-bold py-4 px-16 mr-4 rounded-md">
+                <button class="bg-white text-primary border border-primary text-xs lg:text-sm my-4 font-bold py-4 px-8 lg:px-16 mr-4 rounded-md">
                   Go back
                 </button>
               </Link>
               <Link to="/">
-                <button class="bg-primary text-white  text-sm my-4 font-bold py-4 px-12 rounded-md">
+                <button class="bg-primary text-white text-xs lg:text-sm my-4 font-bold py-4 px-6 lg:px-12 rounded-md">
                   Create account
                 </button>
               </Link>
