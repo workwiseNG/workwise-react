@@ -65,17 +65,8 @@ body {
   border: 1.5px solid #0a459f;
 }
 
-.secure {
-  height: 14rem;
-  width: 24rem;
-}
-
 br {
   display: none;
-}
-
-.input-right {
-  margin-right: 0.9rem;
 }
 
 .nav-links {
@@ -164,11 +155,6 @@ br {
 
   .career-width {
     width: 48%;
-  }
-
-  .secure {
-    height: 16rem;
-    width: 31rem;
   }
 
   .easily {
