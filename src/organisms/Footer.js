@@ -70,11 +70,7 @@ const Footer = () => {
                     className="lg:w-36 -ml-2 mb-2 lg:mt-8"
                     style={{ width: "57%" }}
                   />
-                  <img
-                    src={ios}
-                    alt="ios store"
-                    className="w-2/4 lg:w-32 object-cover"
-                  />
+                  <img src={ios} alt="ios store" className="w-2/4 lg:w-32" />
                 </ul>
               </section>
               <section className="mt-8 mr-16">

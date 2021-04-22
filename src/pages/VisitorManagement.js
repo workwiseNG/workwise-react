@@ -31,11 +31,11 @@ const VisitorManagement = () => {
             solution that keeps your workplace safe and saves your <br />
             receptionist time and energy.
           </p>
-          <div className="flex items-center mt-10">
+          <div className="flex items-center mt-4 lg:mt-10 mb-10 lg:mb-0">
             <img
               src={googlePlay}
               alt="googlePlay"
-              className="-ml-4 playStore"
+              className="-ml-2 lg:-ml-4 playStore"
             />
             <img src={iosStore} alt="iosStore" className="w-40 h-12" />
           </div>
@@ -51,7 +51,7 @@ const VisitorManagement = () => {
         </div>
       </div>
 
-      <section className="m-auto w-10/12 my-40">
+      <section className="m-auto w-10/12 my-20 lg:my-40">
         <div className="lg:flex">
           <div className="border-slim border-primary rounded-md lg:rounded-r-none lg:rounded-l-md mt-4 lg:p-8 p-6 bg-white">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
@@ -91,25 +91,29 @@ const VisitorManagement = () => {
             <Aside
               title="Package Delivery"
               text="Effectively manage your company mails & package deliveries. When items are delivered to the reception area, the recipient gets a notification to let them know their package has arrived."
-              className="mb-12"
+              className="mb-6 lg:mb-12"
             />
-            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md mb-28">
+            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md lg:mb-28">
               Get Started
             </button>
           </div>
           <div className="col-start-7 col-end-13">
-            <img src={packageDelivery} alt="dashboard" className="mb-8" />
+            <img
+              src={packageDelivery}
+              alt="dashboard"
+              className="my-8 lg:mb-8"
+            />
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-12 mt-28">
+        <div className="lg:grid lg:grid-cols-12 mt-16 lg:mt-28">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Upcoming Appointment Display"
               text="Give your visitors a welcoming experience from their first point of contact. With upcoming appointment displays, even your security post can know who to expect, whom they have come to see, what company they are going."
-              className="mb-12"
+              className="mb-6 lg:mb-12"
             />
-            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md mb-28">
+            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md lg:mb-28">
               Get Started
             </button>
           </div>
@@ -117,17 +121,17 @@ const VisitorManagement = () => {
             <img
               src={visitorDashboard}
               alt="dashboard"
-              className="mb-8 lg:w-full"
+              className="my-8 lg:mb-8 lg:w-full"
             />
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-12 mt-28">
+        <div className="lg:grid lg:grid-cols-12 mt-16 lg:mt-28">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Feedback Channels"
               text="Effectively collect useful feedback from your visitors at the point of checking-out of your office premise. Visitors can rate how effective the service they received is."
-              className="mb-12"
+              className="mb-6 lg:mb-12"
             />
             <button class="bg-primary text-white text-sm font-bold py-4 px-8 mb-8 lg:mb-0 rounded-md">
               Get Started
@@ -140,7 +144,7 @@ const VisitorManagement = () => {
       </div>
 
       <div className="bg-gray">
-        <section className="m-auto w-4/6 pt-20 lg:grid lg:grid-cols-12">
+        <section className="m-auto w-5/6 lg:w-4/6 pt-20 lg:grid lg:grid-cols-12">
           <div className="col-start-1 col-end-6">
             <Aside
               title="Do more with Workwise’s Visitor Management Feature"
@@ -161,7 +165,7 @@ const VisitorManagement = () => {
           </div>
         </section>
 
-        <section className="m-auto w-4/6 lg:grid lg:grid-cols-12 mt-8">
+        <section className="m-auto w-5/6 lg:w-4/6 lg:grid lg:grid-cols-12 mt-8">
           <div className="col-start-1 col-end-4">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
               02. <br /> Make a great first impression
@@ -196,7 +200,7 @@ const VisitorManagement = () => {
           </div>
         </section>
 
-        <section className="m-auto w-4/6 lg:grid lg:grid-cols-12 mt-8">
+        <section className="m-auto w-5/6 lg:w-4/6 lg:grid lg:grid-cols-12 mt-8">
           <div className="col-start-1 col-end-4">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
               05. <br /> Easily identify unauthorized visitors

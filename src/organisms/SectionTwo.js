@@ -30,7 +30,7 @@ const SectionTwo = () => {
               text="Welcome your visitors and create a lasting impression with our secure visitor management feature. With a visitor management platform that supports your workplace security, you can easily identify unauthorized guests, know who is in the building in case of an emergency and much more."
               className="mb-6 lg:mb-12"
             />
-            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md">
+            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md lg:mb-28">
               Sign up for free
             </button>
           </div>
@@ -55,7 +55,7 @@ const SectionTwo = () => {
               text="With the Workwise app, employees can easily find, and book meeting rooms based on amenities, locations and more."
               className="mb-6 lg:mb-12"
             />
-            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md">
+            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md lg:mb-28">
               Sign up for free
             </button>
           </div>

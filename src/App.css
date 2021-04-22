@@ -129,7 +129,7 @@ br {
 }
 
 .playStore {
-  width: 42%;
+  width: 51%;
 }
 
 .visibility {
@@ -163,5 +163,9 @@ br {
 
   br {
     display: block;
+  }
+
+  .playStore {
+    width: 42%;
   }
 }
