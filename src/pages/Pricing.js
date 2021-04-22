@@ -20,7 +20,7 @@ const Pricing = () => {
         path="/tryforfree"
       />
 
-      <div className="m-auto w-10/12 my-32 lg:flex justify-between">
+      <div className="m-auto w-10/12 my-20 lg:my-32 flex flex-col lg:flex-row items-center justify-center">
         <PriceCard
           name="Basic"
           status="Free"
@@ -47,7 +47,7 @@ const Pricing = () => {
         />
       </div>
 
-      <section className="m-auto w-10/12 my-32">
+      <section className="m-auto w-10/12 mt-12 mb-20 lg:my-32">
         <Aside title="Compare Plans" />
         <Table />
         <TableTwo />

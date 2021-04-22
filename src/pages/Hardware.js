@@ -20,7 +20,7 @@ const Hardware = () => {
         buttonText="Try for free"
         path="/tryforfree"
       />
-      <section className="m-auto w-10/12 mt-20 lg:mt-40">
+      <section className="m-auto w-11/12 mt-20 lg:mt-40">
         <img src={hardware} alt="hardware" />
       </section>
 

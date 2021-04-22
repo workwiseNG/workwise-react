@@ -8,7 +8,7 @@ const PriceCard = ({
   className,
 }) => {
   return (
-    <div className="border border-primary py-8 px-12 rounded-lg text-center mr-8 mb-16 lg:mb-0">
+    <div className="border border-primary py-8 px-12 rounded-lg text-center lg:mr-8 mb-16 lg:mb-0">
       <p className="text-ashOne pt-6 pb-4">{name}</p>
       <p className="text-primary font-verybold font-bold text-5xl pb-1">
         {status}
