@@ -9,7 +9,7 @@ const NavbarTwo = ({ text, element }) => {
   return (
     <section className="bg-primary mx-auto lg:pl-8 pl-4 pt-4 pb-12 pr-4">
       <SectionWrapper>
-        <header className="lg:flex lg:items-center lg:justify-between">
+        <header className="flex items-center justify-between">
           <Link to="/">
             <img src={whiteLogo} alt="logo" className="w-32 lg:w-28" />
           </Link>
@@ -42,12 +42,12 @@ const NavbarTwo = ({ text, element }) => {
               </button>
             </Link>
           </ul>
-        </header>
-        <div className="lg:m-auto w-11/12">
-          <div className="lg:hidden -mt-8 flex items-center justify-end">
-            <Harmburger color="text-white" />
+          <div className="lg:m-auto w-11/12">
+            <div className="lg:hidden">
+              <Harmburger color="text-white" />
+            </div>
           </div>
-        </div>
+        </header>
         <p className="text-center text-2xl lg:text-5xl text-white font-thin py-16 lg:py-24">
           {text}
         </p>

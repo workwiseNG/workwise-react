@@ -7,7 +7,7 @@ import Harmburger from "./Harmburger";
 const Navbar = () => {
   return (
     <div className="">
-      <header className="lg:flex lg:items-center lg:justify-between mt-6">
+      <header className="flex items-center justify-between mt-6">
         <Link to="/">
           <img src={logo} alt="logo" className="w-32 lg:w-28" />
         </Link>
@@ -39,12 +39,12 @@ const Navbar = () => {
             </button>
           </Link>
         </ul>
+
+        <div className="lg:hidden">
+          <Harmburger />
+        </div>
       </header>
-      <div className="lg:hidden -mt-8 flex items-center justify-end">
-        <Harmburger />
-      </div>
     </div>
   );
 };
-
 export default Navbar;

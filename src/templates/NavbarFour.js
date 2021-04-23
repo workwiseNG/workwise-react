@@ -10,7 +10,7 @@ const NavbarFour = ({ text, className, textTwo }) => {
   return (
     <section className="bg-primary pb-16 pt-8 ">
       <SectionWrapper>
-        <header className="lg:flex lg:items-center lg:justify-between">
+        <header className="flex items-center justify-between">
           <Link to="/">
             <img src={whiteLogo} alt="logo" className="w-32 lg:w-28" />
           </Link>
@@ -43,11 +43,11 @@ const NavbarFour = ({ text, className, textTwo }) => {
               </button>
             </Link>
           </ul>
-        </header>
-        <div className="lg:m-auto w-11/12">
-          <div className="lg:hidden -mt-8 flex items-center justify-end">
+          <div className="lg:hidden">
             <Harmburger color="text-white" />
           </div>
+        </header>
+        <div className="lg:m-auto w-11/12">
           <p
             className={`text-center text-5xl text-white font-thin font-bold leading-snug pt-12 pb-4 ${className}`}
           >
