@@ -31,7 +31,7 @@ const Dropdown = ({ textColor }) => {
             </Link>
             <Link to="/meeting-room">
               <li className="nav-links text-lightBlack font-verybold font-bold mb-4">
-                Meeting Rooms
+                Meeting rooms
               </li>
             </Link>
             <Link to="/employee-clock-in">

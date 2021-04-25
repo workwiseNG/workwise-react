@@ -5,7 +5,7 @@ const Sidebar = ({ open }) => {
   return (
     <div>
       <div
-        className="w-1/2 bg-primary h-full justify-center fixed top-0 z-40"
+        className="w-3/4 bg-primary h-full justify-center fixed top-0 z-40"
         style={{ left: open ? "0" : "-100%" }}
       >
         {SidebarData.map((item, index) => {

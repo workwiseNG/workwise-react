@@ -44,11 +44,11 @@ export const SidebarData = [
         path: "/workwise",
       },
       {
-        title: "Visitor Management",
+        title: "Visitor management",
         path: "/visitor-management",
       },
       {
-        title: "Meeting Rooms",
+        title: "Meeting rooms",
         path: "/meeting-room",
       },
       {
