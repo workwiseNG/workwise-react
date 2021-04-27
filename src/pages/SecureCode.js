@@ -11,13 +11,13 @@ const SecureCode = () => {
     <SectionWrapper>
       <Navbar image={logo} />
 
-      <div className="lg:flex">
+      <div className="md:flex">
         <section className="mt-12 lg:ml-20">
           <LogInIntro
             text="Enter the verification code sent to your
             company email."
             title="Enter verification code"
-            className="lg:mr-56 lg:max-w-xs"
+            className="lg:mr-56 md:max-w-xs"
           />
         </section>
 

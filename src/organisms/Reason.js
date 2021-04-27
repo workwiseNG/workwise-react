@@ -3,8 +3,8 @@ import { SmallText } from "../atoms";
 const Reason = () => {
   return (
     <div className="bg-white absolute z-10">
-      <div className="mt-8 md:flex lg:-mt-28 m-auto w-10/12 relative">
-        <div className="border-slim border-primary rounded-md lg:rounded-r-none lg:rounded-l-md mt-4 lg:p-8 p-6 bg-white">
+      <div className="mt-8 md:flex lg:-mt-28 m-auto w-10/12 md:w-11/12 relative">
+        <div className="border-slim border-primary rounded-md md:rounded-r-none md:rounded-l-md mt-4 md:p-4 lg:p-8 p-6 bg-white">
           <SmallText
             text="Enhance Employee Experience"
             className="font-verybold font-bold my-4
@@ -21,7 +21,7 @@ const Reason = () => {
             className="leading-relaxed mb-8 lg:max-w-md"
           />
         </div>
-        <div className="border-slim border-primary lg:border-0 lg:border-t-slim lg:border-b-slim rounded-md lg:rounded-none mt-4 lg:p-8 p-6 bg-white">
+        <div className="border-slim border-primary md:border-0 md:border-t-slim md:border-b-slim rounded-md md:rounded-none mt-4 md:p-4 lg:p-8 p-6 bg-white">
           <SmallText
             text="Improve Your Workplace"
             className="font-verybold font-bold my-4
@@ -33,7 +33,7 @@ const Reason = () => {
           />
         </div>
 
-        <div className="border-slim border-primary rounded-md lg:rounded-l-none lg:rounded-r-md mt-4 lg:p-8 p-6 bg-white">
+        <div className="border-slim border-primary rounded-md md:rounded-l-none md:rounded-r-md mt-4 md:p-4 lg:p-8 p-6 bg-white">
           <SmallText
             text="Enhance Workplace Security"
             className="font-verybold font-bold my-4

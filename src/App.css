@@ -140,7 +140,25 @@ br {
   margin-top: 40rem;
 }
 
+.services-width {
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .m-top {
+    margin-top: -35rem;
+  }
+
+  .services-width {
+    width: 98%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
+  .m-top {
+    margin-top: -0;
+  }
+
   .button {
     margin-left: 32rem;
   }
@@ -167,5 +185,9 @@ br {
 
   .playStore {
     width: 42%;
+  }
+
+  .services-width {
+    width: 100%;
   }
 }

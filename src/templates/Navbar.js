@@ -13,7 +13,7 @@ const Navbar = () => {
         </Link>
 
         <nav>
-          <ul className="hidden lg:flex items-center text-lightBlack">
+          <ul className="hidden md:flex items-center text-lightBlack">
             <Dropdown />
             {NavbarData.map((item, index) => {
               return (
@@ -40,7 +40,7 @@ const Navbar = () => {
           </Link>
         </ul>
 
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <Harmburger />
         </div>
       </header>

@@ -8,13 +8,13 @@ const SectionOne = () => {
     <div>
       <section className="bg-gray ">
         <SectionWrapper>
-          <section className="lg:flex items-start">
+          <section className="md:flex items-start">
             <img
               src={iPhone4x}
               alt="iphone"
-              className="w-full lg:w-8/12 lg:z-20 lg:-mt-12 h-auto"
+              className="w-full md:w-7/12 lg:w-8/12 lg:z-20 lg:-mt-12 h-auto"
             />
-            <div className="lg:mt-20">
+            <div className="md:mt-10 lg:mt-20">
               <Aside
                 title={
                   <p>

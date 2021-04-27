@@ -24,7 +24,7 @@ const Hardware = () => {
         <img src={hardware} alt="hardware" />
       </section>
 
-      <div className="lg:flex justify-between m-auto w-11/12 lg:w-9/12 mt-20 lg:mt-40 mb-24">
+      <div className="md:flex justify-between m-auto w-11/12 md:w-10/12 mt-20 md:mt-16 lg:mt-32 mb-24">
         <section className="mt-12 w-full lg:w-1/2">
           <HardwareImage image={ipad} title="IPad" className="mb-12" />
           <HardwareImage

@@ -19,7 +19,7 @@ const ContactUs = () => {
           <small>Get in touch with us</small>
         </div>
 
-        <section className="m-auto w-10/12 lg:w-4/12">
+        <section className="m-auto w-10/12 md:w-8/12 lg:w-4/12">
           <Input label="Full name" placeholder="Osamudiamen" type="text" />
           <Input
             label="Email address"

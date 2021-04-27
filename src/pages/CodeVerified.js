@@ -8,7 +8,7 @@ const CodeVerified = () => {
     <SectionWrapper>
       <Navbar image={logo} />
       <div className="flex justify-center items-center mb-16 lg:mb-0">
-        <img src={code} alt="code" className="w-1/2 lg:w-1/6 mt-16 lg:mt-8" />
+        <img src={code} alt="code" className="w-1/2 md:w-1/6 mt-16 lg:mt-8" />
       </div>
     </SectionWrapper>
   );

@@ -9,16 +9,16 @@ const SectionTwo = () => {
   return (
     <div>
       <SectionWrapper>
-        <div className="lg:mt-64">
+        <div className="md:mt-96 lg:mt-64">
           <HeaderTwo
             text="Secure tools to help you run the workplace."
-            className="text-center lg:text-7xl lg:my-32 font-verybold font-bold lg:ml-28 lg:max-w-4xl"
+            className="text-center md:text-6xl lg:text-7xl lg:my-32 font-verybold font-bold lg:ml-28 lg:max-w-4xl"
           />
         </div>
       </SectionWrapper>
 
-      <div className="lg:ml-28 max-w-6xl mx-auto" style={{ width: "90%" }}>
-        <div className="lg:grid lg:grid-cols-12 easily">
+      <div className="m-top lg:ml-28 max-w-6xl mx-auto services-width">
+        <div className="md:grid md:grid-cols-12 easily">
           <div className="col-start-2 col-end-6">
             <Aside
               title={
@@ -34,17 +34,17 @@ const SectionTwo = () => {
               Sign up for free
             </button>
           </div>
-          <div className="lg:col-start-7 lg:col-end-13 inner-picture">
+          <div className="md:col-start-7 md:col-end-13 inner-picture">
             <img
               src={visitorManage}
               alt="dashboard"
-              className="my-8 lg:mb-8 w-full lg:w-1/2 lg:ml-60"
+              className="my-8 md:my-0 md:-mt-8 lg:mb-8 w-full lg:w-1/2 lg:ml-60"
             />
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-12 mt-16 lg:mt-28">
-          <div className="lg:col-start-2 lg:col-end-6">
+        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-28">
+          <div className="md:col-start-2 md:col-end-6">
             <Aside
               title={
                 <p>
@@ -68,7 +68,7 @@ const SectionTwo = () => {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-12 mt-16 lg:mt-28">
+        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-28">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Effectively manage your company mails and package deliveries"
@@ -83,7 +83,7 @@ const SectionTwo = () => {
             <img
               src={proximity}
               alt="dashboard"
-              className="mb-8 w-full lg:w-2/6 lg:ml-64"
+              className="mb-8 w-full md:w-5/6 lg:w-2/6 lg:ml-64"
             />
           </div>
         </div>
