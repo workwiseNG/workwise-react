@@ -12,17 +12,17 @@ const NavbarFour = ({ text, className, textTwo }) => {
       <SectionWrapper>
         <header className="flex items-center justify-between">
           <Link to="/">
-            <img src={whiteLogo} alt="logo" className="w-32 lg:w-28" />
+            <img src={whiteLogo} alt="logo" className="w-32 md:w-28 lg:w-28" />
           </Link>
 
           <nav>
-            <ul className="hidden lg:flex items-center text-lightBlack">
+            <ul className="hidden md:flex items-center text-lightBlack">
               <Dropdown textColor="#ffffff" />
               {NavbarData.map((item, index) => {
                 return (
                   <li
                     key={index}
-                    className="nav-links mr-10 font-verybold font-bold text-white"
+                    className="nav-links md:mr-4 lg:mr-10 font-verybold font-bold text-white"
                   >
                     <Link to={item.path}>{item.title}</Link>
                   </li>
@@ -31,19 +31,19 @@ const NavbarFour = ({ text, className, textTwo }) => {
             </ul>
           </nav>
 
-          <ul className="hidden lg:block text-white">
+          <ul className="hidden md:flex md:items-center lg:block text-white">
             <Link to="/login">
-              <button class=" focus:outline-none text-white border border-white bg-primary font-extrabold text-sm py-4 px-14 font-verybold mr-4 rounded-md">
+              <button class=" focus:outline-none text-white border border-white bg-primary font-extrabold text-xs md:py-2 md:px-8 lg:py-4 lg:px-14 font-verybold mr-4 rounded-md">
                 Log in
               </button>
             </Link>
             <Link to="/tryforfree">
-              <button class="bg-white focus:outline-none text-primary nav-links font-verybold font-semibold py-4 px-8 rounded-md">
+              <button class="bg-white focus:outline-none text-primary nav-links font-verybold font-semibold md:py-2 md:px-4 lg:py-4 lg:px-10 rounded-md">
                 Try for free
               </button>
             </Link>
           </ul>
-          <div className="lg:hidden">
+          <div className="md:hidden">
             <Harmburger color="text-white" />
           </div>
         </header>

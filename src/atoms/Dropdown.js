@@ -10,7 +10,7 @@ const Dropdown = ({ textColor }) => {
   return (
     <div>
       <p
-        className="nav-links font-verybold font-bold mr-10 lightAsh cursor-pointer"
+        className="nav-links font-verybold font-bold md:mr-4 lg:mr-10 lightAsh cursor-pointer"
         style={{ color: textColor }}
         onClick={toggleDropdown}
       >

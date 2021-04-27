@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="">
       <header className="flex items-center justify-between mt-6">
         <Link to="/">
-          <img src={logo} alt="logo" className="w-32 lg:w-28" />
+          <img src={logo} alt="logo" className="w-32 md:w-28 lg:w-28" />
         </Link>
 
         <nav>
@@ -19,7 +19,7 @@ const Navbar = () => {
               return (
                 <li
                   key={index}
-                  className="nav-links mr-10 font-verybold font-bold lightAsh"
+                  className="nav-links md:mr-4 lg:mr-10 font-verybold font-bold lightAsh"
                 >
                   <Link to={item.path}>{item.title}</Link>
                 </li>
@@ -27,14 +27,14 @@ const Navbar = () => {
             })}
           </ul>
         </nav>
-        <ul className="hidden lg:block">
+        <ul className="hidden md:flex md:items-center lg:block">
           <Link to="/login">
-            <button class="bg-white focus:outline-none text-primary border border-primary font-medium text-xs py-4 px-14 font-verybold mr-4 rounded-md">
+            <button class="bg-white focus:outline-none text-primary border border-primary font-medium text-xs md:py-2 md:px-8 lg:py-4 lg:px-14 font-verybold mr-4 rounded-md">
               Log in
             </button>
           </Link>
           <Link to="/tryforfree">
-            <button class="bg-primary outline-none mt-4 text-white text-xs font-medium py-4 px-10 rounded-md">
+            <button class="bg-primary outline-none lg:mt-4 text-white text-xs font-medium md:py-2 md:px-4 lg:py-4 lg:px-10 rounded-md">
               Try for free
             </button>
           </Link>

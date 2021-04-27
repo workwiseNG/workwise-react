@@ -16,8 +16,8 @@ const Footer = () => {
   return (
     <SectionWrapper>
       <div className="mt-20 border-t border-lightBlack">
-        <div className="lg:flex lg:mb-16 lg:justify-between">
-          <section className="lg:max-w-lg">
+        <div className="md:flex lg:mb-16 lg:justify-between">
+          <section className="md:max-w-xl lg:max-w-lg">
             <img
               src={logo}
               alt="logo"
@@ -43,7 +43,7 @@ const Footer = () => {
 
           <div className="lg:mt-12">
             <div className="lg:flex">
-              <section className="mt-8 mr-12">
+              <section className="mt-8 mr-8">
                 <p className="text-xs uppercase mb-4 font-verybold font-bold footer-text">
                   Products
                 </p>
