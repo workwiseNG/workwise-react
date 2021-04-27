@@ -16,12 +16,12 @@ const Footer = () => {
   return (
     <SectionWrapper>
       <div className="mt-20 border-t border-lightBlack">
-        <div className="md:flex lg:mb-16 lg:justify-between">
-          <section className="md:max-w-xl lg:max-w-lg">
+        <div className="lg:flex lg:mb-16 lg:justify-between">
+          <section className="md:w-full lg:max-w-lg">
             <img
               src={logo}
               alt="logo"
-              className="w-1/2 lg:w-1/5 mt-8 lg:mb-8"
+              className="w-1/2 md:w-32 lg:w-1/5 mt-8 lg:mb-8"
             />
             <SmallText
               text="© 2020 Workwise NG. All rights reserved."
@@ -42,7 +42,7 @@ const Footer = () => {
           </section>
 
           <div className="lg:mt-12">
-            <div className="lg:flex">
+            <div className="md:flex md:justify-between">
               <section className="mt-8 mr-8">
                 <p className="text-xs uppercase mb-4 font-verybold font-bold footer-text">
                   Products
@@ -67,10 +67,9 @@ const Footer = () => {
                   <img
                     src={playStore}
                     alt="playStore"
-                    className="lg:w-36 -ml-2 mb-2 lg:mt-8"
-                    style={{ width: "57%" }}
+                    className="w-36 md:w-36 -ml-2 mb-2 lg:mt-8"
                   />
-                  <img src={ios} alt="ios store" className="w-2/4 lg:w-32" />
+                  <img src={ios} alt="ios store" className="w-2/4 md:w-32" />
                 </ul>
               </section>
               <section className="mt-8 mr-16">
@@ -154,7 +153,7 @@ const Footer = () => {
               </section>
             </div>
 
-            <section className="lg:flex lg:items-center mt-4">
+            <section className="md:flex md:justify-between md:items-center mt-4">
               <Link
                 to="/privacy-policy"
                 className="font-verybold font-bold text-xs text-lightBlack leading-relaxed footerText mr-4"
@@ -170,7 +169,7 @@ const Footer = () => {
                   Terms of Service
                 </p>
               </Link>
-              <div className="flex mb-8 lg:mb-0">
+              <div className="flex mb-8 lg:mb-0 md:mt-6 lg:mt-0">
                 <img src={facebook} alt="facebook" className="mr-2" />
                 <img src={twitter} alt="twitter" className="mr-2" />
                 <img src={linkedin} alt="linkedin" className="mr-2" />
