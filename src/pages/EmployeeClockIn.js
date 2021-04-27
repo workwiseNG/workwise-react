@@ -19,8 +19,8 @@ const EmployeeClockIn = () => {
         <Navbar />
       </SectionWrapper>
 
-      <div className="m-auto w-10/12 lg:grid lg:grid-cols-12 mt-12">
-        <div className="col-start-3 col-end-7">
+      <div className="m-auto w-10/12 md:grid md:grid-cols-12 mt-12">
+        <div className="col-start-2 col-end-7">
           <p className="uppercase text-primary text-small font-bold mb-4 track">
             Employee-Clock-In
           </p>
@@ -47,8 +47,8 @@ const EmployeeClockIn = () => {
         </div>
       </div>
 
-      <div className="m-auto w-10/12 lg:w-full">
-        <div className="lg:grid lg:grid-cols-12 mt-16 lg:mt-36 mb-52">
+      <div className="m-auto w-10/12 md:w-full">
+        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-36 mb-52 md:mb-42">
           <div className="col-start-3 col-end-6 mb-8 lg:mb-0">
             <Aside
               title="Geo Fencing"
@@ -59,7 +59,7 @@ const EmployeeClockIn = () => {
             </button>
           </div>
           <div className="col-start-8 col-end-13 rounded-lg relative">
-            <div className="flex">
+            <div className="flex md:mt-16 lg:mt-0">
               <img src={clockInOne} alt="dashTwo" className="w-1/2 -mt-28" />
               <img
                 src={clockInTwo}
@@ -70,7 +70,7 @@ const EmployeeClockIn = () => {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-12 my-36">
+        <div className="md:grid md:grid-cols-12 my-36 ">
           <div className="col-start-3 col-end-6">
             <Aside
               title="Track Employee Attendance Log"

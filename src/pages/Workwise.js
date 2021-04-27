@@ -24,7 +24,7 @@ const Workwise = () => {
         }
       />
 
-      <section className="m-auto w-9/12 my-36 lg:grid lg:grid-cols-12">
+      <section className="m-auto w-9/12 md:w-10/12 lg:w-9/12 my-36 md:my-20 lg:my-36 md:grid md:grid-cols-12">
         <div className="col-start-1 col-end-6">
           <section
             className="rounded-t-lg px-12 pt-16"
@@ -60,7 +60,7 @@ const Workwise = () => {
         </div>
       </section>
 
-      <section className="m-auto w-9/12 my-36 lg:grid lg:grid-cols-12">
+      <section className="m-auto w-9/12 md:w-10/12 lg:w-9/12 my-36 md:my-20 lg:my-36 md:grid md:grid-cols-12">
         <div className="col-start-1 col-end-6">
           <Aside
             title={
@@ -103,7 +103,7 @@ const Workwise = () => {
         </div>
       </section>
 
-      <section className="m-auto w-9/12 my-36 lg:grid lg:grid-cols-12">
+      <section className="m-auto w-9/12 md:w-10/12 lg:w-9/12 my-36 md:my-20 lg:my-20 md:grid md:grid-cols-12">
         <div className="col-start-1 col-end-6">
           <section
             className="rounded-t-lg"
@@ -146,7 +146,9 @@ const Workwise = () => {
         </div>
       </section>
 
-      <SectionTwo />
+      <div className="md:-mt-64 lg:-mt-40">
+        <SectionTwo />
+      </div>
       <Footer />
     </div>
   );
