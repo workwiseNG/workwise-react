@@ -18,8 +18,8 @@ const VisitorManagement = () => {
         <Navbar />
       </SectionWrapper>
 
-      <div className="m-auto w-10/12 lg:w-full lg:grid lg:grid-cols-12 mt-12">
-        <div className="col-start-3 col-end-7">
+      <div className="m-auto w-10/12 md:w-full md:grid md:grid-cols-12 mt-12">
+        <div className="md:col-start-2 lg:col-start-3 col-end-7">
           <p className="uppercase text-primary text-small font-bold mb-4 track">
             Visitor Management
           </p>
@@ -51,9 +51,9 @@ const VisitorManagement = () => {
         </div>
       </div>
 
-      <section className="m-auto w-10/12 my-20 lg:my-40">
-        <div className="lg:flex">
-          <div className="border-slim border-primary rounded-md lg:rounded-r-none lg:rounded-l-md mt-4 lg:p-8 p-6 bg-white">
+      <section className="m-auto w-10/12 my-20 md:my-10 lg:my-40">
+        <div className="md:flex">
+          <div className="border-slim border-primary rounded-md md:rounded-r-none md:rounded-l-md mt-4 lg:p-8 p-6 bg-white">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
               01. <br /> Visitors sign in on a mobile kiosk
             </p>
@@ -63,7 +63,7 @@ const VisitorManagement = () => {
             </p>
           </div>
 
-          <div className="border-slim border-primary lg:border-0 lg:border-t-slim lg:border-b-slim rounded-md lg:rounded-none lg:p-8 p-6 mt-4 bg-white">
+          <div className="border-slim border-primary md:border-0 md:border-t-slim md:border-b-slim rounded-md md:rounded-none lg:p-8 p-6 mt-4 bg-white">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
               02. <br /> Workwise notifies their host
             </p>
@@ -73,7 +73,7 @@ const VisitorManagement = () => {
             </p>
           </div>
 
-          <div className="border-slim border-primary rounded-md lg:rounded-l-none lg:rounded-r-md mt-4 lg:p-8 p-6 bg-white">
+          <div className="border-slim border-primary rounded-md md:rounded-l-none md:rounded-r-md mt-4 lg:p-8 p-6 bg-white">
             <p className="font-verybold text-lightBlack text-sm font-bold my-4">
               03. <br /> The employee welcomes their visitor
             </p>
@@ -85,8 +85,8 @@ const VisitorManagement = () => {
         </div>
       </section>
 
-      <div className="lg:ml-28 mb-20 m-auto w-10/12 lg:w-full">
-        <div className="lg:grid lg:grid-cols-12">
+      <div className="lg:ml-28 mb-20 md:mt-20 m-auto w-10/12 md:w-full">
+        <div className="md:grid md:grid-cols-12">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Package Delivery"
@@ -106,7 +106,7 @@ const VisitorManagement = () => {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-12 mt-16 lg:mt-28">
+        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-28">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Upcoming Appointment Display"
@@ -126,7 +126,7 @@ const VisitorManagement = () => {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-12 mt-16 lg:mt-28">
+        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-28">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Feedback Channels"
@@ -144,7 +144,7 @@ const VisitorManagement = () => {
       </div>
 
       <div className="bg-gray">
-        <section className="m-auto w-5/6 lg:w-4/6 pt-20 lg:grid lg:grid-cols-12">
+        <section className="m-auto w-5/6 lg:w-4/6 pt-20 md:grid md:grid-cols-12">
           <div className="col-start-1 col-end-6">
             <Aside
               title="Do more with Workwise’s Visitor Management Feature"
@@ -165,7 +165,7 @@ const VisitorManagement = () => {
           </div>
         </section>
 
-        <section className="m-auto w-5/6 lg:w-4/6 lg:grid lg:grid-cols-12 mt-8">
+        <section className="m-auto w-5/6 lg:w-4/6 md:grid md:grid-cols-12 mt-8">
           <div className="col-start-1 col-end-4">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
               02. <br /> Make a great first impression
@@ -200,7 +200,7 @@ const VisitorManagement = () => {
           </div>
         </section>
 
-        <section className="m-auto w-5/6 lg:w-4/6 lg:grid lg:grid-cols-12 mt-8">
+        <section className="m-auto w-5/6 lg:w-4/6 md:grid md:grid-cols-12 mt-8">
           <div className="col-start-1 col-end-4">
             <p className="font-verybold text-lightBlack font-bold text-sm  my-4">
               05. <br /> Easily identify unauthorized visitors

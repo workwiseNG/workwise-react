@@ -23,8 +23,8 @@ const MeetingRoom = () => {
         <Navbar />
       </SectionWrapper>
 
-      <div className="m-auto w-10/12 lg:w-full lg:grid lg:grid-cols-12 mt-12">
-        <div className="col-start-3 col-end-8">
+      <div className="m-auto w-10/12 md:w-full md:grid md:grid-cols-12 mt-12">
+        <div className="md:col-start-2 lg:col-start-3 col-end-8">
           <p className="uppercase text-primary text-small font-bold mb-4 track">
             Meeting Rooms
           </p>
@@ -51,8 +51,8 @@ const MeetingRoom = () => {
         </div>
       </div>
 
-      <div className="m-auto w-10/12 lg:w-full">
-        <div className="lg:grid lg:grid-cols-12 mt-20">
+      <div className="m-auto w-10/12 md:w-full">
+        <div className="md:grid md:grid-cols-12 mt-20">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Eliminate conflicts & double booking automatically"
@@ -71,7 +71,7 @@ const MeetingRoom = () => {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-12 mt-20">
+        <div className="md:grid md:grid-cols-12 mt-20">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Multiple methods of booking"
@@ -93,7 +93,7 @@ const MeetingRoom = () => {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-12 mt-40">
+        <div className="md:grid md:grid-cols-12 mt-20">
           <div className="col-start-2 col-end-6 mb-8 lg:mb-0">
             <Aside
               title="Better usage of rooms"
@@ -108,7 +108,7 @@ const MeetingRoom = () => {
         </div>
       </div>
 
-      <div className="m-auto w-10/12 text-center mt-36 lg:mt-72 mb-28">
+      <div className="m-auto w-10/12 text-center mt-36 md:mt-24 lg:mt-72 mb-28">
         <HeaderTwo
           text="Find and reserve spaces at your desk or on the go."
           className=" lg:mt-12 lg:text-7xl font-verybold font-extrabold"
@@ -116,12 +116,12 @@ const MeetingRoom = () => {
       </div>
 
       <section className="m-auto w-10/12 mt-20">
-        <div className="lg:flex">
-          <section className="border-slim border-primary rounded-md lg:rounded-r-none lg:rounded-l-md p-8 mb-10 lg:mb-0">
+        <div className="md:flex">
+          <section className="border-slim border-primary rounded-md md:rounded-r-none md:rounded-l-md p-8 mb-10 lg:mb-0">
             <div>
               <img src={calendar} alt="calendar" className="meeting-icon" />
             </div>
-            <p className="font-verybold text-lightBlack font-bold my-4">
+            <p className="font-verybold text-lightBlack text-sm lg:text-base font-bold my-4">
               Calendar Plug-ins
             </p>
             <p className="text-lightBlack text-sm leading-relaxed">
@@ -130,11 +130,11 @@ const MeetingRoom = () => {
             </p>
           </section>
 
-          <section className="border-slim border-primary lg:border-0 lg:border-t-slim lg:border-b-slim rounded-md lg:rounded-none mb-10 lg:mb-0 p-8">
+          <section className="border-slim border-primary md:border-0 md:border-t-slim md:border-b-slim rounded-md md:rounded-none mb-10 lg:mb-0 p-8">
             <div>
               <img src={app} alt="calendar" className="w-1/12" />
             </div>
-            <p className="font-verybold text-lightBlack font-bold my-4">
+            <p className="font-verybold text-lightBlack text-sm lg:text-base font-bold my-4">
               Workwise Mobile App
             </p>
             <p className="text-lightBlack text-sm leading-relaxed">
@@ -143,11 +143,11 @@ const MeetingRoom = () => {
             </p>
           </section>
 
-          <section className="border-slim border-primary rounded-md lg:rounded-l-none lg:rounded-r-md mb-10 lg:mb-0 p-8">
+          <section className="border-slim border-primary rounded-md md:rounded-l-none md:rounded-r-md mb-10 lg:mb-0 p-8">
             <div>
               <img src={tablet} alt="meetingIpad" className="meeting-icon" />
             </div>
-            <p className="font-verybold text-lightBlack font-bold my-4">
+            <p className="font-verybold text-lightBlack text-sm lg:text-base font-bold my-4">
               Room Displays
             </p>
             <p className="text-lightBlack text-sm leading-relaxed">

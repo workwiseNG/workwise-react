@@ -37,17 +37,17 @@ const AboutUs = () => {
       </section>
 
       <div className="bg-gray">
-        <div className="m-auto w-10/12">
+        <div className="m-auto w-10/12 md:w-11/12">
           <section className="mt-28 lg:mt-32">
-            <div className="lg:grid lg:grid-cols-12 pt-12 lg:pt-24">
-              <div className="col-start-2 col-end-7">
+            <div className="md:grid md:grid-cols-12 pt-12 lg:pt-24">
+              <div className="md:col-start-2 md:col-end-5 lg:col-end-7">
                 <img
                   src={founderTwo}
                   alt="founderTwo"
-                  className="w-3/4 lg:w-full rounded-lg"
+                  className="w-3/4 md:w-full rounded-lg"
                 />
               </div>
-              <div className="col-start-8 col-end-13">
+              <div className="md:col-start-6 lg:col-start-8 col-end-13">
                 <AboutAside
                   text="Founder/CEO"
                   title="Niyi Adisa,"
@@ -67,15 +67,15 @@ const AboutUs = () => {
           </section>
 
           <section>
-            <div className="lg:grid lg:grid-cols-12 pb-12 lg:pb-24 mt-16">
-              <div className="col-start-2 col-end-7">
+            <div className="md:grid md:grid-cols-12 pb-12 lg:pb-24 mt-16">
+              <div className="md:col-start-2 md:col-end-5 lg:col-end-7">
                 <img
                   src={ctoTwo}
                   alt="ctoTwo"
                   className=" w-3/4 lg:w-full lg:mt-0"
                 />
               </div>
-              <div className="col-start-8 col-end-13">
+              <div className="md:col-start-6 lg:col-start-8 col-end-13">
                 <AboutAside
                   text="Chief Technology Officer"
                   title="Ilyas Farawe,"

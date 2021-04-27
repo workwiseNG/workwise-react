@@ -42,10 +42,8 @@ const NavbarTwo = ({ text, element }) => {
               </button>
             </Link>
           </ul>
-          <div className="lg:m-auto w-11/12">
-            <div className="lg:hidden">
-              <Harmburger color="text-white" />
-            </div>
+          <div className="lg:hidden">
+            <Harmburger color="text-white" />
           </div>
         </header>
         <p className="text-center text-2xl lg:text-5xl text-white font-thin py-16 lg:py-24">
