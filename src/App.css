@@ -2,6 +2,13 @@ body {
   color: #1a1a1a;
 }
 
+body,
+ul,
+header {
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   transition: 850ms;
 }

@@ -7,7 +7,7 @@ import Harmburger from "./Harmburger";
 const Navbar = () => {
   return (
     <div className="">
-      <header className="flex items-center justify-between mt-0 lg:mt-6">
+      <header className="flex items-center justify-between mt-6">
         <Link to="/">
           <img src={logo} alt="logo" className="w-32 md:w-28 lg:w-28" />
         </Link>
