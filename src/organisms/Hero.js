@@ -1,6 +1,6 @@
-import postcard from "../assets/postCard.svg";
+import postcard from "../assets/postCard.png";
 import postcardTwo from "../assets/postCardTwo.png";
-import postcardThree from "../assets/postCardThree.svg";
+import postcardThree from "../assets/postCardThree.png";
 import { HeaderOne, SmallText } from "../atoms";
 import Navbar from "../templates/Navbar";
 import { Link } from "react-router-dom";

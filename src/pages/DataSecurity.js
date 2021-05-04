@@ -12,7 +12,7 @@ const DataSecurity = () => {
         text="Protecting your data and your privacy."
         buttonText="Download PDF"
         path="/"
-        className="lg:m-auto w-7/12"
+        className=""
       />
 
       <section className="m-auto w-11/12 lg:w-10/12 mt-20">

@@ -110,7 +110,7 @@ const AboutUs = () => {
         </p>
       </section>
 
-      <div className="m-auto w-10/12 lg:w-8/12">
+      <div className="m-auto w-10/12 lg:w-10/12">
         <BlogIntro />
       </div>
       <Footer />

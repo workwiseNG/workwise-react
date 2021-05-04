@@ -7,7 +7,7 @@ import packageDelivery from "../assets/package.png";
 import googlePlay from "../assets/googlePlay.png";
 import iosStore from "../assets/iosStore.png";
 import visitor from "../assets/visitor.png";
-import visitorOne from "../assets/visitorTwo.png";
+import visitorOne from "../assets/visitorOne.png";
 import { BigText } from "../atoms";
 import { Footer } from "../organisms";
 

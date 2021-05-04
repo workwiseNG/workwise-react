@@ -4,9 +4,9 @@ import Navbar from "../templates/Navbar";
 import googlePlay from "../assets/googlePlay.png";
 import iosStore from "../assets/iosStore.png";
 import clockIn from "../assets/clockIn.svg";
-import clockInOne from "../assets/clockInOne.svg";
-import clockInTwo from "../assets/clockInTwo.svg";
-import clockInThree from "../assets/clockInThree.svg";
+import clockInOne from "../assets/clockInOne.png";
+import clockInTwo from "../assets/clockInTwo.png";
+import clockInThree from "../assets/clockInThree.png";
 import { Aside } from "../molecules";
 import { BigText } from "../atoms";
 // import organization from "../assets/organizations.png";
@@ -80,7 +80,7 @@ const EmployeeClockIn = () => {
               Get Started
             </button>
           </div>
-          <div className="col-start-7 col-end-13 rounded-lg">
+          <div className="col-start-7 col-end-13">
             <div className="flex">
               <img src={clockInThree} alt="dashTwo" className="inner-picture" />
             </div>
