@@ -152,6 +152,15 @@ br {
   .services-width {
     width: 98%;
   }
+
+  .flexReason {
+    display: flex;
+  }
+
+  .flexItem {
+    flex-grow: 0;
+    flex-basis: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {

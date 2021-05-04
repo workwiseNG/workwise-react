@@ -51,6 +51,25 @@ const Reason = () => {
           />
         </div>
       </div>
+      {/* <div className="m-auto w-10/12">
+        <div className="flexReason">
+          <div className="border border-primary flexItem">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            voluptatibus libero at facilis perspiciatis fugit quos molestiae
+            architecto voluptate inventore?
+          </div>
+          <div className="border border-primary flexItem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+            culpa.
+          </div>
+          <div className="border border-primary flexItem">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+            ducimus aliquam culpa corrupti nesciunt perspiciatis doloremque, aut
+            itaque consectetur quam soluta. Veniam id culpa velit blanditiis
+            repudiandae laborum corrupti neque.
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };
