@@ -20,14 +20,14 @@ const Pricing = () => {
         path="/tryforfree"
       />
 
-      <div className="m-auto w-10/12 my-20 lg:my-32 flex flex-col md:flex-row items-center justify-center">
+      <div className="m-auto w-10/12 my-20 lg:my-32 flex flex-col md:flex-row md:items-center justify-center">
         <PriceCard
           name="Basic"
           status="Free"
           rooms="up to 10 rooms"
           note="For offices just getting started with meeting room management."
           buttonText="Get Started"
-          className="mt-14"
+          className="mt-14 md:mt-24 lg:mt-14"
         />
         <PriceCard
           name="Basic"
