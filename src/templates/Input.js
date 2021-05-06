@@ -16,6 +16,14 @@ const Input = ({ label, placeholder, className, type }) => {
       />
     </div>
   );
+  // return (
+  //   <div className="">
+  //     <label class="input">
+  //       <input class="input__field" type={type} placeholder={placeholder} />
+  //       <span class="input__label font-BwN">Safety Guidelines</span>
+  //     </label>
+  //   </div>
+  // );
 };
 
 // .input {
@@ -45,7 +53,7 @@ const Input = ({ label, placeholder, className, type }) => {
 //     width: 100%;
 
 // <label class="input">
-//                     <input class="input__field" type="text" placeholder=" " />
-//                     <span class="input__label font-BwN">Safety Guidelines</span>
-//                   </label>
+//   <input class="input__field" type="text" placeholder=" " />
+//   <span class="input__label font-BwN">Safety Guidelines</span>
+// </label>
 export default Input;

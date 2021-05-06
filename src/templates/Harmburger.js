@@ -2,12 +2,27 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
-const Harmburger = ({ color, className }) => {
+const Harmburger = (ref, { color, className }) => {
+  // useEffect(() => {
+  //   function handleClickOutside(event) {
+  //     if (ref.current && !ref.current.contains(event.target)) {
+  //       alert("You clicked outside of me!");
+  //     }
+  //   }
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, [ref]);
   const [open, setOpen] = useState(false);
   const showSidebar = () => setOpen(!open);
   return (
-    <div>
-      <Link to="#" className="ml-8 text-xl flex">
+    <div className="flex justify-start items-center">
+      <Link
+        to="#"
+        className="ml-8 text-xl flex justify-start items-center"
+        style={{ display: open ? "none" : "flex" }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -15,8 +30,9 @@ const Harmburger = ({ color, className }) => {
           stroke="currentColor"
           width="2rem"
           onClick={showSidebar}
-          className={`${color} ${className}`}
+          className=""
         >
+          {/* display: open ? "hidden" : "flex" */}
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -25,25 +41,10 @@ const Harmburger = ({ color, className }) => {
           />
         </svg>
       </Link>
+
       {open ? (
         <div className="">
-          {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 mt-1"
-              fill="none"
-              width="4rem"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              onClick={!showSidebar}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg> */}
-          <Sidebar open={open} />
+          <Sidebar open={open} showSidebar={showSidebar} />
         </div>
       ) : (
         ""

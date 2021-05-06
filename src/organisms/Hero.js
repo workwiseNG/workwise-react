@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div>
       <Navbar />
-      <div className="md:grid md:grid-cols-12 mt-10 md:mt-20">
+      <div className="md:grid md:grid-cols-12 mt-6 md:mt-20">
         <section className="col-start-2 col-end-8">
           <HeaderOne
             text={

@@ -8,6 +8,7 @@ import facebook from "../assets/facebook.png";
 import twitter from "../assets/twitter.png";
 import instagram from "../assets/instagram.png";
 import linkedin from "../assets/linkedin.png";
+import { Resources, Company } from "../data/Footer";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -42,8 +43,8 @@ const Footer = () => {
           </section>
 
           <div className="lg:mt-12">
-            <div className="md:flex md:justify-between">
-              <section className="mt-8 mr-8">
+            <div className="flex flex-col-reverse md:flex-row justify-between">
+              <section className="mt-8">
                 <p className="text-xs uppercase mb-4 font-verybold font-bold footer-text">
                   Products
                 </p>
@@ -72,85 +73,42 @@ const Footer = () => {
                   <img src={ios} alt="ios store" className="w-2/4 md:w-32" />
                 </ul>
               </section>
-              <section className="mt-8 mr-16">
-                <p className="text-xs uppercase mb-4 font-verybold font-bold footer-text">
-                  Resources
-                </p>
-                <ul>
-                  <Link to="/requestdemo">
-                    <li onClick={scrollToTop}>
-                      <SmallerText
-                        text="Request Demo"
-                        className="font-bold mb-4"
-                      />
-                    </li>
-                  </Link>
-                  <Link to="pricing">
-                    <li onClick={scrollToTop}>
-                      <SmallerText text="Pricing" className="font-bold mb-4" />
-                    </li>
-                  </Link>
-                  <Link to="/contactus">
-                    <li onClick={scrollToTop}>
-                      <SmallerText text="Support" className="font-bold mb-4" />
-                    </li>
-                  </Link>
-                  <Link to="/hardware">
-                    <li onClick={scrollToTop}>
-                      <SmallerText text="Hardware" className="font-bold mb-4" />
-                    </li>
-                  </Link>
-                  <Link to="/learn">
-                    <li onClick={scrollToTop}>
-                      <SmallerText text="Learn" className="font-bold mb-4" />
-                    </li>
-                  </Link>
-                  <Link to="/contactus">
-                    <li onClick={scrollToTop}>
-                      <SmallerText text="Support" className="font-bold mb-4" />
-                    </li>
-                  </Link>
-                </ul>
-              </section>
-
-              <section className="mt-8 mr-20">
-                <p className="uppercase mb-4 font-verybold font-bold footer-text">
-                  Company
-                </p>
-                <ul>
-                  <Link to="aboutus">
-                    <li onClick={scrollToTop}>
-                      <SmallerText text="About Us" className="font-bold mb-4" />
-                    </li>
-                  </Link>
-                  <Link to="/contactus">
-                    <li onClick={scrollToTop}>
-                      <SmallerText
-                        text="Contact Us"
-                        className="font-bold mb-4"
-                      />
-                    </li>
-                  </Link>
-                  <Link to="/careers">
-                    <li onClick={scrollToTop}>
-                      <SmallerText text="Careers" className="font-bold mb-4" />
-                    </li>
-                  </Link>
-                  <Link to="/blog">
-                    <li onClick={scrollToTop}>
-                      <SmallerText text="Blog" className="font-bold mb-4" />
-                    </li>
-                  </Link>
-                  <Link to="datasecurity">
-                    <li onClick={scrollToTop}>
-                      <SmallerText
-                        text="Data Security"
-                        className="font-bold mb-4"
-                      />
-                    </li>
-                  </Link>
-                </ul>
-              </section>
+              <div className="flex flex-row-reverse md:flex-row">
+                <section className="mt-8">
+                  <p className="text-xs uppercase mb-4 font-verybold font-bold footer-text">
+                    Resources
+                  </p>
+                  {Resources.map((text, index) => (
+                    <ul key={index} className="mt-4">
+                      <Link to={text.link}>
+                        <li onClick={scrollToTop}>
+                          <SmallerText
+                            text={text.name}
+                            className="font-bold mb-4"
+                          />
+                        </li>
+                      </Link>
+                    </ul>
+                  ))}
+                </section>
+                <section className="mt-8 mr-20">
+                  <p className="uppercase mb-4 font-verybold font-bold footer-text">
+                    Company
+                  </p>
+                  {Company.map((text, index) => (
+                    <ul key={index} className="mt-4">
+                      <Link to={text.link}>
+                        <li onClick={scrollToTop}>
+                          <SmallerText
+                            text={text.name}
+                            className="font-bold mb-4"
+                          />
+                        </li>
+                      </Link>
+                    </ul>
+                  ))}
+                </section>
+              </div>
             </div>
 
             <section className="md:flex md:justify-between md:items-center mt-4">
