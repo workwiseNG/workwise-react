@@ -24,11 +24,6 @@ export const Resources = [
     link: "/learn",
     id: 5,
   },
-  {
-    name: "Support",
-    link: "/contactus",
-    id: 6,
-  },
 ];
 
 export const Company = [

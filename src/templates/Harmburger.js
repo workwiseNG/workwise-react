@@ -42,12 +42,10 @@ const Harmburger = (ref, { color, className }) => {
         </svg>
       </Link>
 
-      {open ? (
+      {open && (
         <div className="">
           <Sidebar open={open} showSidebar={showSidebar} />
         </div>
-      ) : (
-        ""
       )}
     </div>
   );

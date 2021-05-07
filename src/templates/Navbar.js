@@ -13,13 +13,13 @@ const Navbar = () => {
         </Link>
 
         <nav>
-          <ul className="hidden md:flex items-center text-lightBlack">
+          <ul className="hidden md:flex items-center md:justify-between text-lightBlack">
             <Dropdown />
             {NavbarData.map((item, index) => {
               return (
                 <li
                   key={index}
-                  className="nav-links md:mr-4 lg:mr-10 font-verybold font-bold lightAsh"
+                  className="nav-links md:mr-4 lg:mr-10 font-verybold font-bold lightAsh md:flex md:justify-between"
                 >
                   <Link to={item.path}>{item.title}</Link>
                 </li>

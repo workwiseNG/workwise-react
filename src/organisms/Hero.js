@@ -41,6 +41,28 @@ const Hero = () => {
           <img src={postcard} alt="postcard" className="-mt-8 ml-4 lg:w-full" />
         </section>
       </div>
+
+      {/* <div className="py-6 px-0">
+        <h1>EQUAL HEIGHT + WIDTH COLUMNS</h1>
+        <p>Add display:flex to the parent and flex:1 to the boxes</p>
+        <div className="flex justify-betweem">
+          <div className="equalHW eq border border-primary">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            placeat excepturi voluptatibus aspernatur ea dolorum repellat
+            provident veritatis ab, necessitatibus, iste fugiat a ad, quibusdam
+            obcaecati asperiores nostrum laboriosam hic.
+          </div>
+          <div class="equalHW eq border border-primary">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+            impedit perspiciatis in nesciunt explicabo autem quas consequuntur
+            asperiores eum totam.
+          </div>
+          <div class="equalHW eq border border-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus, rem.
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import logo from "../assets/Group.png";
 import playStore from "../assets/googlePlay.png";
 import ios from "../assets/iosStore.png";
+// import playStoreTwo from "../assets/googleSVG.svg";
+// import iosTwo from "../assets/iosSVG.svg";
 import { SmallText, SmallerText } from "../atoms";
 import { SectionWrapper } from "../layout/SectionWrapper";
 import { Link } from "react-router-dom";
@@ -43,8 +45,8 @@ const Footer = () => {
           </section>
 
           <div className="lg:mt-12">
-            <div className="flex flex-col-reverse md:flex-row justify-between">
-              <section className="mt-8">
+            <div className="flex flex-col-reverse md:flex-row justify-around">
+              <section className="mt-8 ml-4">
                 <p className="text-xs uppercase mb-4 font-verybold font-bold footer-text">
                   Products
                 </p>
@@ -69,12 +71,14 @@ const Footer = () => {
                     src={playStore}
                     alt="playStore"
                     className="w-36 md:w-36 -ml-2 mb-2 lg:mt-8"
+
+                    //     width: 70%    margin-left: -.7rem;;
                   />
                   <img src={ios} alt="ios store" className="w-2/4 md:w-32" />
                 </ul>
               </section>
-              <div className="flex flex-row-reverse md:flex-row">
-                <section className="mt-8">
+              <div className="flex flex-row-reverse justify-around md:flex-row">
+                <section className="mt-8 md:mr-24 lg:ml-16">
                   <p className="text-xs uppercase mb-4 font-verybold font-bold footer-text">
                     Resources
                   </p>

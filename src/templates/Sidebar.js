@@ -3,7 +3,7 @@ import SubMenu from "../templates/SubMenu";
 
 const Sidebar = ({ open, showSidebar }) => {
   return (
-    <div className="" style={{ transition: "350ms" }}>
+    <div className="">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className=""
@@ -21,8 +21,13 @@ const Sidebar = ({ open, showSidebar }) => {
         />
       </svg>
       <div
-        className="w-3/4 bg-primary h-full mt-14 fixed top-0 z-40"
-        style={{ right: open ? "0" : "-100%" }}
+        className={` bg-primary h-full mt-14 fixed top-0 z-40 ${
+          open ? "w-3/4" : "w-0"
+        }`}
+        style={{
+          right: open ? "0" : "100%",
+          transition: open && "all 1s ease-in-out",
+        }}
       >
         {SidebarData.map((item, index) => {
           return <SubMenu item={item} key={index} />;
@@ -31,5 +36,5 @@ const Sidebar = ({ open, showSidebar }) => {
     </div>
   );
 };
-
+// ${open ? "w-3/4" : "w-0"}
 export default Sidebar;

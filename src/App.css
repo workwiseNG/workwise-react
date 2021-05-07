@@ -9,6 +9,14 @@ header {
   padding: 0;
 }
 
+.equalHW {
+  flex: 1;
+}
+
+.eq {
+  padding: 10px;
+}
+
 .navbar {
   transition: 850ms;
 }
