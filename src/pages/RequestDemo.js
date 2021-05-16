@@ -30,7 +30,11 @@ const RequestDemo = () => {
             type="email"
           />
           <Input label="Phone number" placeholder="08018564579" type="text" />
-          <Select label="I'm interested with how Workwise can help with" />
+          <Select
+            label="I'm interested with how Workwise can help with"
+            option1="Visitor management"
+            option2="Meeting room booking"
+          />
 
           <div className="float-right">
             <Link to="/" className="text-right">
