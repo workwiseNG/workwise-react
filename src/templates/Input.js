@@ -1,16 +1,20 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
-const Input = ({ label, placeholder, className, type }) => {
+const Input = ({ label, placeholder, className, type, ref, name }) => {
+  // const { register } = useForm();
   return (
     <div className={`shadow-menu input-box border border-primary ${className}`}>
-      <p
+      <label
         className="text-xs text-primary label-text absolute"
         style={{ fontFamily: "Bw Nista Geometric DEMO" }}
       >
         {label}
-      </p>
+      </label>
       <input
         type={type}
+        name={name}
+        // {...register( { required: true })}
         placeholder={placeholder}
         className={`p-2 outline-none w-full text-base text-greyTwo py-4 px-4 input-font ${className}`}
       />
