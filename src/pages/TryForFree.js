@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
 
 import { SectionWrapper } from "../layout/SectionWrapper";
 import { LogInIntro } from "../molecules";
@@ -13,43 +11,19 @@ import eyeOpen from "../assets/eyeOpen.svg";
 import eyeClosed from "../assets/eyeClosed.svg";
 
 const TryForFree = () => {
-  const schema = yup.object().shape({
-    company_email: yup
-      .string()
-      .email("Invalid email")
-      .required("Email is required"),
-    first_name: yup.string().required("First name is required"),
-    last_name: yup.string().required("Last name is required"),
-    password: yup
-      .string()
-      .required("No password provided.")
-      .min(8, "Password is too short - should be 8 chars minimum."),
-    // company_name: yup.string().required("Comapny name is required"),
-    // company_name: yup.string().required("Company name is required"),
-    // company_address: yup.string().required("Company address is required"),
-    // company_size: yup
-    //   .string()
-    //   .oneOf([
-    //     "1 - 40 employees",
-    //     "41 - 80 employees",
-    //     "81 - 120 employees",
-    //     "121 - 160 employees",
-    //   ])
-    //   .required("You must select at least one option"),
-    // company_url: yup.string().required("Company url is required"),
-  });
   const {
     watch,
     register,
     handleSubmit,
-    formState: { errors, isValid, isSubmitting },
+    formState: { errors, isValid },
   } = useForm({
     mode: "onChange",
-    resolver: yupResolver(schema),
   });
   console.log(errors);
 
-  const onSubmit = (data, e) => console.log(data, e);
+  const onSubmit = (data, e) => {
+    window.alert(JSON.stringify(data));
+  };
   const onError = (errors, e) => console.log(errors, e);
 
   const [formStep, setFormStep] = useState(0);
@@ -59,53 +33,8 @@ const TryForFree = () => {
   };
   const nextFormStep = () => {
     setFormStep((cur) => cur + 1);
-    console.log("good morning");
   };
 
-  const renderButton = () => {
-    if (formStep > 1) {
-      return undefined;
-    } else if (formStep === 1) {
-      return (
-        <div className="flex">
-          <button
-            onClick={backFormStep}
-            className="bg-white text-primary border border-primary text-xs lg:text-sm my-4 font-bold py-4 px-8 lg:px-16 mr-4 rounded-md"
-          >
-            Go back
-          </button>
-          <button
-            type="submit"
-            className="bg-primary text-white text-xs lg:text-sm my-4 font-bold py-4 px-6 lg:px-12 rounded-md"
-          >
-            Create account
-          </button>
-        </div>
-      );
-    } else {
-      return (
-        <div className="float-right">
-          {console.log(errors, isValid)}
-          {/* <button
-            disabled={!isValid}
-            type="button"
-            onClick={nextFormStep}
-            className="bg-primary du  disabled:cursor-not-allowed text-white text-sm font-medium my-4 py-4 px-20 rounded-md"
-          >
-            Next
-          </button> */}
-          <button
-            disabled={!isValid}
-            onClick={nextFormStep}
-            className="bg-primary"
-            type="button"
-          >
-            Next
-          </button>
-        </div>
-      );
-    }
-  };
   const backFormStep = () => {
     setFormStep(formStep - 1);
   };
@@ -163,16 +92,24 @@ const TryForFree = () => {
                         id="company_email"
                         name="company_email"
                         placeholder="osa@mudia.ment"
-                        {...register("company_email")}
+                        {...register("company_email", {
+                          required: true,
+                          pattern:
+                            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                        })}
                       />
                     </div>
-                    {errors.company_email && (
+                    {errors?.company_email?.type === "required" && (
                       <p className="text-red-500 text-sm">
-                        {errors.company_email.message}
+                        This field is required
+                      </p>
+                    )}
+                    {errors?.company_email?.type === "pattern" && (
+                      <p className="text-red-500 text-sm">
+                        Please enter a valid email
                       </p>
                     )}
                   </div>
-
                   <div>
                     <div
                       className={`shadow-menu input-box border border-primary `}
@@ -189,16 +126,29 @@ const TryForFree = () => {
                         id="first_name"
                         name="first_name"
                         placeholder="osamudiamen"
-                        {...register("first_name")}
+                        {...register("first_name", {
+                          required: true,
+                          maxLength: 20,
+                          pattern: /^[A-Za-z]+$/i,
+                        })}
                       />
                     </div>
-                    {errors.first_name && (
+                    {errors?.first_name?.type === "required" && (
                       <p className="text-red-500 text-sm">
-                        {errors.first_name.message}
+                        This field is required
+                      </p>
+                    )}
+                    {errors?.first_name?.type === "maxLength" && (
+                      <p className="text-red-500 text-sm">
+                        First name cannot exceed 20 characters
+                      </p>
+                    )}
+                    {errors?.first_name?.type === "pattern" && (
+                      <p className="text-red-500 text-sm">
+                        Alphabetical characters only
                       </p>
                     )}
                   </div>
-
                   <div>
                     <div
                       className={`shadow-menu input-box border border-primary `}
@@ -215,12 +165,12 @@ const TryForFree = () => {
                         id="last_name"
                         name="last_name"
                         placeholder="imaseun"
-                        {...register("last_name")}
+                        {...register("last_name", { pattern: /^[A-Za-z]+$/i })}
                       />
                     </div>
-                    {errors.last_name && (
+                    {errors?.last_name?.type === "pattern" && (
                       <p className="text-red-500 text-sm">
-                        {errors.last_name.message}
+                        Alphabetical characters only
                       </p>
                     )}
                   </div>
@@ -249,15 +199,37 @@ const TryForFree = () => {
                           id="password"
                           name="password"
                           type={passwordShown ? "text" : "password"}
-                          {...register("password")}
+                          {...register("password", {
+                            required: true,
+                            pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/s,
+                          })}
                         />
                       </div>
-                      {errors.password && (
+                      {errors?.password?.type === "required" && (
                         <p className="text-red-500 text-sm">
-                          {errors.password.message}
+                          This field is required
+                        </p>
+                      )}
+                      {errors?.password?.type === "pattern" && (
+                        <p className="text-red-500 text-sm">
+                          Please enter a valid password,password must be at
+                          least 8 characters and contain at least one capital
+                          letter, one lower case letter and one number.
                         </p>
                       )}
                     </div>
+                  </div>
+
+                  <div className="float-right">
+                    {console.log(errors, isValid)}
+                    <button
+                      disabled={!isValid}
+                      type="button"
+                      onClick={nextFormStep}
+                      className="bg-primary text-white text-sm font-medium my-4 py-4 px-20 rounded-md"
+                    >
+                      Next
+                    </button>
                   </div>
                 </section>
               </div>
@@ -291,16 +263,17 @@ const TryForFree = () => {
                       </label>
                       <input
                         className={`p-2 outline-none w-full text-base text-greyTwo py-4 px-4 input-font`}
-                        type="text"
                         id="company_name"
                         name="company_name"
                         placeholder="osa@mudia.ment"
-                        {...register("company_name")}
+                        {...register("company_name", {
+                          required: true,
+                        })}
                       />
                     </div>
-                    {errors.company_name && (
+                    {errors?.company_name?.type === "required" && (
                       <p className="text-red-500 text-sm">
-                        {errors.company_name.message}
+                        This field is required
                       </p>
                     )}
                   </div>
@@ -321,12 +294,14 @@ const TryForFree = () => {
                         id="company_address"
                         name="company_address"
                         placeholder="Osamudiamen"
-                        {...register("company_address")}
+                        {...register("company_address", {
+                          required: true,
+                        })}
                       />
                     </div>
-                    {errors.company_address && (
+                    {errors?.company_address?.type === "required" && (
                       <p className="text-red-500 text-sm">
-                        {errors.company_address.message}
+                        This field is required
                       </p>
                     )}
                   </div>
@@ -375,21 +350,36 @@ const TryForFree = () => {
                         id="company_url"
                         name="company_url"
                         placeholder="companyname.workwise.ng"
-                        {...register("company_url")}
+                        {...register("company_url", {
+                          required: true,
+                        })}
                       />
                     </div>
-                    {errors.company_url && (
+                    {errors?.company_url?.type === "required" && (
                       <p className="text-red-500 text-sm">
-                        {errors.company_url.message}
+                        This field is required
                       </p>
                     )}
+                  </div>
+                  <div className="flex">
+                    <button
+                      onClick={backFormStep}
+                      className="bg-white text-primary border border-primary text-xs lg:text-sm my-4 font-bold py-4 px-8 lg:px-16 mr-4 rounded-md"
+                    >
+                      Go back
+                    </button>
+                    <button
+                      type="submit"
+                      className="bg-primary text-white text-xs lg:text-sm my-4 font-bold py-4 px-6 lg:px-12 rounded-md"
+                    >
+                      Create account
+                    </button>
                   </div>
                 </section>
               </div>
             </div>
           )}
-          <pre>{JSON.stringify(watch(), null, 2)}</pre>
-          {renderButton()}
+          {/* <pre>{JSON.stringify(watch(), null, 2)}</pre> */}
         </form>
       </SectionWrapper>
     </div>
