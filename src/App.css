@@ -13,6 +13,13 @@ header {
   flex: 1;
 }
 
+button:disabled,
+button[disabled] {
+  border: 1px solid #fad3d3;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .eq {
   padding: 10px;
 }
