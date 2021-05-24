@@ -37,7 +37,7 @@ const Login = () => {
                 className="text-sm font-semibold text-ash mt-2 ml-2"
                 style={{ fontFamily: "Bw Nista Geometric DEMO" }}
               >
-                .workwise.com
+                .workwise.ng
               </p>
             </section>
 

@@ -15,7 +15,7 @@ const RequestDemo = () => {
       <div className="mt-12 lg:flex mb-24">
         <section className="ml-10 lg:ml-24 lg:mr-64">
           <LogInIntro
-            title="To schedule a demo,kindly fill our form"
+            title="To schedule a demo, kindly fill our form"
             bgColor="#0A459F"
             className="max-w-xs"
           />
@@ -31,7 +31,7 @@ const RequestDemo = () => {
           />
           <Input label="Phone number" placeholder="08018564579" type="text" />
           <Select
-            label="I'm interested with how Workwise can help with"
+            label="I'm interested in"
             option1="Visitor management"
             option2="Meeting room booking"
           />
