@@ -86,28 +86,36 @@ const TryForFree = () => {
 
                 <section className="slim-border col-start-7 col-end-13 rounded-md mb-24 px-6 lg:px-8 pb-24 pt-4 lg:py-4">
                   <div>
-                    <div
-                      className={`shadow-menu input-box border border-primary `}
-                    >
-                      <label
-                        className="text-xs text-primary label-text absolute"
+                    <section className="flex items-center w-full">
+                      <div
+                        className={`shadow-menu input-box border border-primary w-3/4`}
+                      >
+                        <label
+                          className="text-xs text-primary label-text absolute"
+                          style={{ fontFamily: "Bw Nista Geometric DEMO" }}
+                        >
+                          Your company email
+                        </label>
+                        <input
+                          className={`p-2 outline-none w-full text-base text-greyTwo py-4 px-4 input-font`}
+                          type="text"
+                          id="email"
+                          name="email"
+                          placeholder="osa@mudia.ment"
+                          {...register("email", {
+                            required: true,
+                            pattern:
+                              /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                          })}
+                        />
+                      </div>
+                      <p
+                        className="text-sm font-semibold text-ash mt-2 ml-2 w-1/4"
                         style={{ fontFamily: "Bw Nista Geometric DEMO" }}
                       >
-                        Your company email
-                      </label>
-                      <input
-                        className={`p-2 outline-none w-full text-base text-greyTwo py-4 px-4 input-font`}
-                        type="text"
-                        id="email"
-                        name="email"
-                        placeholder="osa@mudia.ment"
-                        {...register("email", {
-                          required: true,
-                          pattern:
-                            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                        })}
-                      />
-                    </div>
+                        .workwise.ng
+                      </p>
+                    </section>
                     {errors?.email?.type === "required" && (
                       <p className="text-red-500 text-sm">
                         This field is required
