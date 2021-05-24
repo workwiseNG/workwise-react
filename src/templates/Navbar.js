@@ -29,12 +29,12 @@ const Navbar = () => {
         </nav>
         <ul className="hidden md:flex md:items-center lg:block">
           <Link to="/login">
-            <button class="bg-white focus:outline-none text-primary border border-primary font-medium text-xs md:py-2 md:px-8 lg:py-4 lg:px-14 font-verybold mr-4 rounded-md">
+            <button className="bg-white focus:outline-none text-primary border border-primary font-medium text-xs md:py-2 md:px-8 lg:py-4 lg:px-14 font-verybold mr-4 rounded-md">
               Log in
             </button>
           </Link>
           <Link to="/tryforfree">
-            <button class="bg-primary outline-none lg:mt-4 text-white text-xs font-medium md:py-2 md:px-4 lg:py-4 lg:px-10 rounded-md">
+            <button className="bg-primary outline-none lg:mt-4 text-white text-xs font-medium md:py-2 md:px-4 lg:py-4 lg:px-10 rounded-md">
               Try for free
             </button>
           </Link>

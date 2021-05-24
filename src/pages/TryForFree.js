@@ -1,18 +1,14 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 import { SectionWrapper } from "../layout/SectionWrapper";
 import { LogInIntro } from "../molecules";
-// import Input from "../templates/Input";
-// import Select from "../templates/Select";
 import Navbar from "../templates/Navbar";
 import eyeOpen from "../assets/eyeOpen.svg";
 import eyeClosed from "../assets/eyeClosed.svg";
 
 const TryForFree = () => {
   const {
-    watch,
     register,
     handleSubmit,
     formState: { errors, isValid },
@@ -65,9 +61,9 @@ const TryForFree = () => {
                         </p>
                         <p className="my-4 lg:mt-4">
                           By clicking “Next” you agree to our <br />
-                          <Link className="text-primary">
+                          <a href="www.workwise.com" className="text-primary">
                             Terms of Service, Privacy Policy
-                          </Link>
+                          </a>
                         </p>
                       </div>
                     }
