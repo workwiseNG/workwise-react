@@ -27,14 +27,15 @@ const Login = () => {
           </section>
 
           <section className="slim-border col-start-7 col-end-13 rounded-md mt-12 px-4 md:px-10 py-4 lg:py-6 mb-16 lg:mb-0">
-            <section className="flex items-center">
+            <section className="flex items-center w-full">
               <Input
                 label="Your company url"
                 placeholder="mentworkspace"
                 type="text"
+                className="w-3/4"
               />
               <p
-                className="text-sm font-semibold text-ash mt-2 ml-2"
+                className="text-sm font-semibold text-ash mt-2 ml-2 w-1/4"
                 style={{ fontFamily: "Bw Nista Geometric DEMO" }}
               >
                 .workwise.ng
