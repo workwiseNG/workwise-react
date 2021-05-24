@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
@@ -9,23 +9,34 @@ import { LogInIntro } from "../molecules";
 import Navbar from "../templates/Navbar";
 import eyeOpen from "../assets/eyeOpen.svg";
 import eyeClosed from "../assets/eyeClosed.svg";
+import Input from "../templates/Input";
 
 const TryForFree = () => {
   const {
-    watch,
+    getValues,
     register,
     handleSubmit,
-    formState: { errors, isValid },
+    formState: { errors, isValid, isSubmitted },
   } = useForm({
     mode: "onChange",
   });
-  console.log(errors);
-
+  const values = getValues();
   const onSubmit = (data, e) => {
     window.alert(JSON.stringify(data));
+    fetch("https://workwise-laravel.workwise.ng/api/user/onboard", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((result) => result.json())
+      .then((info) => {
+        console.log(info);
+      });
   };
+  // useEffect(() => {}, []);
   const onError = (errors, e) => console.log(errors, e);
-
   const [formStep, setFormStep] = useState(0);
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePasswordVisibility = () => {
@@ -76,7 +87,7 @@ const TryForFree = () => {
                 </section>
 
                 <section className="slim-border col-start-7 col-end-13 rounded-md mb-24 px-6 lg:px-8 pb-24 pt-4 lg:py-4">
-                  <div>
+                  {/* <div>
                     <div
                       className={`shadow-menu input-box border border-primary `}
                     >
@@ -89,27 +100,49 @@ const TryForFree = () => {
                       <input
                         className={`p-2 outline-none w-full text-base text-greyTwo py-4 px-4 input-font`}
                         type="text"
-                        id="company_email"
-                        name="company_email"
+                        id="email"
+                        name="email"
                         placeholder="osa@mudia.ment"
-                        {...register("company_email", {
+                        {...register("email", {
                           required: true,
                           pattern:
                             /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                         })}
                       />
                     </div>
-                    {errors?.company_email?.type === "required" && (
+                    {errors?.email?.type === "required" && (
                       <p className="text-red-500 text-sm">
                         This field is required
                       </p>
                     )}
-                    {errors?.company_email?.type === "pattern" && (
+                    {errors?.email?.type === "pattern" && (
                       <p className="text-red-500 text-sm">
                         Please enter a valid email
                       </p>
                     )}
-                  </div>
+                  </div> */}
+                  <Input
+                    label=" Your company email"
+                    placeholder="osa@mudia.ment"
+                    type="email"
+                    id="email"
+                    name="email"
+                    {...register("email", {
+                      required: true,
+                      pattern:
+                        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                    })}
+                    {...(errors?.email?.type === "required" && (
+                      <p className="text-red-500 text-sm">
+                        This field is required
+                      </p>
+                    ))}
+                    {...(errors?.email?.type === "pattern" && (
+                      <p className="text-red-500 text-sm">
+                        Please enter a valid email
+                      </p>
+                    ))}
+                  />
                   <div>
                     <div
                       className={`shadow-menu input-box border border-primary `}
@@ -217,6 +250,48 @@ const TryForFree = () => {
                           letter, one lower case letter and one number.
                         </p>
                       )}
+                    </div>
+                    <div className="w-full relative">
+                      <i onClick={togglePasswordVisibility}>
+                        <img
+                          src={passwordShown ? eyeOpen : eyeClosed}
+                          alt="visible"
+                          className="w-6 absolute visibility mt-4"
+                        />
+                      </i>
+                      <div>
+                        <div
+                          className={`shadow-menu input-box border border-primary `}
+                        >
+                          <label
+                            className="text-xs text-primary label-text absolute"
+                            style={{ fontFamily: "Bw Nista Geometric DEMO" }}
+                          >
+                            Confirm Password
+                          </label>
+                          <input
+                            className={`p-2 outline-none w-full text-base text-greyTwo py-4 px-4 input-font`}
+                            type="text"
+                            id="password_confirmation"
+                            name="password_confirmation"
+                            type={passwordShown ? "text" : "password"}
+                            {...register("password_confirmation", {
+                              required: true,
+                              validate: (value) => value === values.password,
+                            })}
+                          />
+                        </div>
+                        {errors?.password_confirmation?.type === "required" && (
+                          <p className="text-red-500 text-sm">
+                            This field is required
+                          </p>
+                        )}
+                        {errors?.password_confirmation?.type === "validate" && (
+                          <p className="text-red-500 text-sm">
+                            Passwords don't match
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </div>
 
@@ -377,6 +452,13 @@ const TryForFree = () => {
                   </div>
                 </section>
               </div>
+            </div>
+          )}
+          {isSubmitted && (
+            <div className="success">
+              <p className="font-base text-green-500">
+                Form submitted successfully
+              </p>
             </div>
           )}
           {/* <pre>{JSON.stringify(watch(), null, 2)}</pre> */}
