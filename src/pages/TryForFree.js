@@ -87,7 +87,7 @@ const TryForFree = () => {
                 </section>
 
                 <section className="slim-border col-start-7 col-end-13 rounded-md mb-24 px-6 lg:px-8 pb-24 pt-4 lg:py-4">
-                  {/* <div>
+                  <div>
                     <div
                       className={`shadow-menu input-box border border-primary `}
                     >
@@ -120,29 +120,8 @@ const TryForFree = () => {
                         Please enter a valid email
                       </p>
                     )}
-                  </div> */}
-                  <Input
-                    label=" Your company email"
-                    placeholder="osa@mudia.ment"
-                    type="email"
-                    id="email"
-                    name="email"
-                    {...register("email", {
-                      required: true,
-                      pattern:
-                        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                    })}
-                    {...(errors?.email?.type === "required" && (
-                      <p className="text-red-500 text-sm">
-                        This field is required
-                      </p>
-                    ))}
-                    {...(errors?.email?.type === "pattern" && (
-                      <p className="text-red-500 text-sm">
-                        Please enter a valid email
-                      </p>
-                    ))}
-                  />
+                  </div>
+
                   <div>
                     <div
                       className={`shadow-menu input-box border border-primary `}
