@@ -3,6 +3,9 @@ import blogTwo from "../assets/blogTwo.png";
 import { Link } from "react-router-dom";
 
 const BlogIntro = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <section className="mt-8">
       <div className="mt-8 mb-16">
@@ -12,61 +15,52 @@ const BlogIntro = () => {
       </div>
 
       <section className="mb-12 flex justify-between">
-        <div className="relative mr-10">
-          <div className="absolute top-2 lg:top-4 lg:left-4 p-4 ml-4 mt-2 lg:mt-4 bg-white rounded-md h-32 lg:h-36 w-40">
-            <p className="text-lightBlack text-sm lg:text-sm font-verybold font-medium mb-0 lg:mb-2">
+        <div className="overflow-hidden shadow-lg mr-10">
+          <img className="w-full" src={blog} alt="Mountain" />
+          <div className="px-6 py-4">
+            <p className="text-lightBlack text-base lg:text-lg font-verybold font-medium mb-0 lg:mb-10">
               Workwise raises $100m Series A funding from Salesforce.
             </p>
             <Link
               to="/blogarticle"
+              onClick={scrollToTop}
               className="text-primary underline text-xs lg:text-sm font-verybold font-bold"
             >
               Read full article
             </Link>
           </div>
-          <img
-            src={blog}
-            alt="blog"
-            className="rounded-sm my-4 mb-12 w-full lg:w-full"
-          />
         </div>
 
-        <div className="relative mr-10">
-          <div className="absolute top-2 lg:top-4 lg:left-4 p-4 ml-4 mt-2 lg:mt-4 bg-white rounded-md h-32 lg:h-36 w-40">
-            <p className="text-lightBlack text-sm lg:text-sm font-verybold font-medium mb-0 lg:mb-2">
+        <div className="overflow-hidden shadow-lg mr-10">
+          <img className="w-full" src={blogTwo} alt="Mountain" />
+          <div className="px-6 py-4">
+            <p className="text-lightBlack text-sm lg:text-lg font-verybold font-medium mb-0 lg:mb-10">
               Hermann Powe joins Workwise as new Head of Design
             </p>
             <Link
-              to="/blog"
+              to="/blogarticle"
+              onClick={scrollToTop}
               className="text-primary underline text-xs lg:text-sm font-verybold font-bold"
             >
               Read full article
             </Link>
           </div>
-          <img
-            src={blogTwo}
-            alt="blogTwo"
-            className="rounded-sm my-4 lg:w-full"
-          />
         </div>
 
-        <div className="relative">
-          <div className="absolute top-2 lg:top-4 lg:left-4 p-4 ml-4 mt-2 lg:mt-4 bg-white rounded-md h-32 lg:h-36 w-40">
-            <p className="text-lightBlack text-sm lg:text-sm font-verybold font-medium mb-0 lg:mb-2">
+        <div className="overflow-hidden shadow-lg">
+          <img className="w-full" src={blog} alt="Mountain" />
+          <div className="px-6 py-4">
+            <p className="text-lightBlack text-base lg:text-lg font-verybold font-medium mb-0 lg:mb-10">
               Workwise raises $100m Series A funding from Salesforce.
             </p>
             <Link
               to="/blogarticle"
-              className="text-primary underline text-xs lg:text-sm font-verybold font-bold"
+              onClick={scrollToTop}
+              className="text-primary underline text-xs lg:text-sm font-verybold mb-4 font-bold"
             >
               Read full article
             </Link>
           </div>
-          <img
-            src={blog}
-            alt="blog"
-            className="rounded-sm my-4 mb-12 w-full lg:w-full"
-          />
         </div>
       </section>
     </section>

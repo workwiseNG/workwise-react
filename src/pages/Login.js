@@ -26,12 +26,23 @@ const Login = () => {
 
           <section className="slim-border col-start-7 col-end-13 rounded-md mt-12 px-4 md:px-10 py-4 lg:py-6 mb-16 lg:mb-0">
             <section className="flex items-center w-full">
-              <Input
-                label="Your company url"
-                placeholder="mentworkspace"
-                type="text"
-                className="w-3/4"
-              />
+              <div
+                className={`shadow-menu input-box border border-primary w-3/4`}
+              >
+                <label
+                  className="text-xs text-primary label-text absolute"
+                  style={{ fontFamily: "Bw Nista Geometric DEMO" }}
+                >
+                  Your company url
+                </label>
+                <input
+                  className={`p-2 outline-none w-full text-base text-greyTwo py-4 px-4 input-font`}
+                  type="text"
+                  // id="email"
+                  // name="email"
+                  placeholder="mentworkspace"
+                />
+              </div>
               <p
                 className="text-sm font-semibold text-ash mt-2 ml-2 w-1/4"
                 style={{ fontFamily: "Bw Nista Geometric DEMO" }}

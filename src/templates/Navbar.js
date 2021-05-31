@@ -13,7 +13,7 @@ const Navbar = () => {
         </Link>
 
         <nav>
-          <ul className="hidden md:flex items-center md:justify-between text-lightBlack">
+          <ul className="hidden md:flex items-center md:justify-between ml-72 text-lightBlack">
             <Dropdown />
             {NavbarData.map((item, index) => {
               return (
@@ -28,9 +28,12 @@ const Navbar = () => {
             <DropdownTwo />
           </ul>
         </nav>
-        <ul className="hidden md:flex md:items-center lg:block">
+        <ul
+          className="hidden md:flex md:items-center lg:block"
+          style={{ marginTop: "-0.5rem" }}
+        >
           <Link to="/login">
-            <button className="bg-white focus:outline-none text-primary border border-primary font-medium text-xs md:py-2 md:px-8 lg:py-4 lg:px-14 font-verybold mr-4 rounded-md">
+            <button className="bg-white focus:outline-none text-primary border border-primary font-medium text-xs md:py-2 md:px-8 lg:py-4 lg:px-12 font-verybold mr-4 rounded-md">
               Log in
             </button>
           </Link>

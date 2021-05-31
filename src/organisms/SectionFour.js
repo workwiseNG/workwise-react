@@ -10,7 +10,7 @@ const SectionFour = () => {
         buttonText="Find out how"
       />
       <SectionWrapper>
-        <div className="mt-16 md:mt-8">
+        <div className="mt-16 md:mt-0">
           <BlogIntro />
         </div>
       </SectionWrapper>
