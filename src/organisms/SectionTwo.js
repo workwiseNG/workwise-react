@@ -21,12 +21,7 @@ const SectionTwo = () => {
         <div className="md:grid md:grid-cols-12 easily">
           <div className="col-start-2 col-end-6">
             <Aside
-              title={
-                <p>
-                  Easily manage <span className="lg:mr-24">your</span> guests
-                  and visitors
-                </p>
-              }
+              title="Easily manage your visitors"
               text="Welcome your visitors and create a lasting impression with our secure visitor management feature. With a visitor management platform that supports your workplace security, you can easily identify unauthorized guests, know who is in the building in case of an emergency and much more."
               className="mb-6 lg:mb-12"
             />
@@ -45,26 +40,21 @@ const SectionTwo = () => {
 
         <div className="md:grid md:grid-cols-12 mt-16 lg:mt-28">
           <div className="md:col-start-2 md:col-end-6">
+            <img
+              src={smartBooking}
+              alt="dashboard"
+              className="my-8 lg:mb-8 lg:w-full"
+            />
+          </div>
+          <div className="col-start-9 col-end-13">
             <Aside
-              title={
-                <p>
-                  Smarter room <span className="lg:mr-24">booking</span> for
-                  everyone in your office
-                </p>
-              }
+              title="Smarter room booking for everyone in your office"
               text="With the Workwise app, employees can easily find, and book meeting rooms based on amenities, locations and more."
               className="mb-6 lg:mb-12"
             />
             <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md lg:mb-28">
               Sign up for free
             </button>
-          </div>
-          <div className="col-start-7 col-end-13">
-            <img
-              src={smartBooking}
-              alt="dashboard"
-              className="my-8 lg:mb-8 lg:w-full"
-            />
           </div>
         </div>
 
@@ -85,6 +75,26 @@ const SectionTwo = () => {
               alt="dashboard"
               className="mb-8 w-full md:w-5/6 lg:w-2/6 lg:ml-64"
             />
+          </div>
+        </div>
+
+        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-28">
+          <div className="md:col-start-2 md:col-end-6">
+            <img
+              src={smartBooking}
+              alt="dashboard"
+              className="my-8 lg:mb-8 lg:w-full"
+            />
+          </div>
+          <div className="col-start-9 col-end-13">
+            <Aside
+              title="One workplace app, for all "
+              text="Empower employees to find, book, request and connect with everything they need to operate the workplace in real time."
+              className="mb-6 lg:mb-12"
+            />
+            <button class="bg-primary text-white text-sm font-bold py-4 px-8 rounded-md lg:mb-28">
+              Sign up for free
+            </button>
           </div>
         </div>
       </div>

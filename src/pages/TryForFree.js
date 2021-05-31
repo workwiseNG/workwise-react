@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 import { SectionWrapper } from "../layout/SectionWrapper";
@@ -7,7 +6,7 @@ import { LogInIntro } from "../molecules";
 import Navbar from "../templates/Navbar";
 import eyeOpen from "../assets/eyeOpen.svg";
 import eyeClosed from "../assets/eyeClosed.svg";
-import Input from "../templates/Input";
+// import Input from "../templates/Input";
 
 const TryForFree = () => {
   const {
@@ -213,7 +212,6 @@ const TryForFree = () => {
                         </label>
                         <input
                           className={`p-2 outline-none w-full text-base text-greyTwo py-4 px-4 input-font`}
-                          type="text"
                           id="password"
                           name="password"
                           type={passwordShown ? "text" : "password"}
@@ -256,7 +254,6 @@ const TryForFree = () => {
                           </label>
                           <input
                             className={`p-2 outline-none w-full text-base text-greyTwo py-4 px-4 input-font`}
-                            type="text"
                             id="password_confirmation"
                             name="password_confirmation"
                             type={passwordShown ? "text" : "password"}

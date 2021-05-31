@@ -14,7 +14,6 @@ const Reason = () => {
             text={
               <p>
                 Empower your employee to be more productive with user-friendly
-                <br />
                 technology they can access from anywhere.
               </p>
             }

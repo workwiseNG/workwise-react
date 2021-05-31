@@ -3,7 +3,7 @@ import { NavbarData } from "../data/NavData";
 import Harmburger from "./Harmburger";
 import whiteLogo from "../assets/whitelogo.svg";
 import lens from "../assets/lens.svg";
-import { Dropdown } from "../atoms";
+import { Dropdown, DropdownTwo } from "../atoms";
 import { SectionWrapper } from "../layout/SectionWrapper";
 
 const NavbarFour = ({ text, className, textTwo }) => {
@@ -28,6 +28,7 @@ const NavbarFour = ({ text, className, textTwo }) => {
                   </li>
                 );
               })}
+              <DropdownTwo textColor="#ffffff" />
             </ul>
           </nav>
 

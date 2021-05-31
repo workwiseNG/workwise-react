@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { products } from "../data/dropdown";
+import { resources } from "../data/dropdown";
 
-const Dropdown = ({ textColor }) => {
+const DropdownTwo = ({ textColor }) => {
   const [showDropDown, setShowDropDown] = useState(false);
   const toggleDropdown = () => {
     setShowDropDown(!showDropDown);
@@ -20,7 +20,7 @@ const Dropdown = ({ textColor }) => {
       {showDropDown && (
         <div className="mt-2 absolute w-44 bg-white shadow-lg rounded-lg p-4">
           <ul className="">
-            {products.map(({ title, path }) => {
+            {resources.map(({ title, path }) => {
               return (
                 <Link to={path} key={title}>
                   <li className="nav-links text-lightBlack font-verybold font-bold mb-4">
@@ -36,4 +36,4 @@ const Dropdown = ({ textColor }) => {
   );
 };
 
-export { Dropdown };
+export { DropdownTwo };

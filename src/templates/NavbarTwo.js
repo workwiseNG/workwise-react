@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { NavbarData } from "../data/NavData";
 import whiteLogo from "../assets/whitelogo.svg";
 import { SectionWrapper } from "../layout/SectionWrapper";
-import { Dropdown } from "../atoms";
+import { Dropdown, DropdownTwo } from "../atoms";
 import Harmburger from "./Harmburger";
 
 const NavbarTwo = ({ text, element }) => {
@@ -27,6 +27,7 @@ const NavbarTwo = ({ text, element }) => {
                   </li>
                 );
               })}
+              <DropdownTwo textColor="#ffffff" />
             </ul>
           </nav>
 

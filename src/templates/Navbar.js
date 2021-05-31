@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { NavbarData } from "../data/NavData";
 import logo from "../assets/Group.png";
-import { Dropdown } from "../atoms";
+import { Dropdown, DropdownTwo } from "../atoms";
 import Harmburger from "./Harmburger";
 
 const Navbar = () => {
@@ -25,6 +25,7 @@ const Navbar = () => {
                 </li>
               );
             })}
+            <DropdownTwo />
           </ul>
         </nav>
         <ul className="hidden md:flex md:items-center lg:block">

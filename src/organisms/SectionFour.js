@@ -1,4 +1,3 @@
-// import organization from "../assets/organizations.png";
 import { SectionWrapper } from "../layout/SectionWrapper";
 import BlogIntro from "../templates/BlogIntro";
 import { BigText } from "../atoms";
@@ -7,23 +6,11 @@ const SectionFour = () => {
   return (
     <div className="mt-24 lg:mt-0">
       <BigText
-        text={
-          <p>
-            Increase employee engagement <br /> through the roof!
-          </p>
-        }
+        text="Powering Workplace Experiences!"
         buttonText="Find out how"
       />
       <SectionWrapper>
-        <div className="mt-16 lg:ml-28">
-          <div>
-            {/* <img
-            src={organization}
-            alt="organization"
-            className="object-cover lg:my-36"
-          /> */}
-          </div>
-
+        <div className="mt-16 md:mt-8">
           <BlogIntro />
         </div>
       </SectionWrapper>
