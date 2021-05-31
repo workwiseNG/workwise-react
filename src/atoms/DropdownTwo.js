@@ -15,7 +15,7 @@ const DropdownTwo = ({ textColor }) => {
         style={{ color: textColor }}
         onClick={toggleDropdown}
       >
-        Products
+        Resources
       </p>
       {showDropDown && (
         <div className="mt-2 absolute w-44 bg-white shadow-lg rounded-lg p-4">

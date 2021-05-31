@@ -8,9 +8,7 @@ const Login = () => {
   return (
     <div>
       <SectionWrapper>
-        <div>
-          <Navbar />
-        </div>
+        <Navbar />
 
         <div className="md:grid grid-cols-12 lg:m-auto lg:w-10/12">
           <section className="mt-6 md:mt-12 col-start-1 col-end-5 lg:ml-4">
