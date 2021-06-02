@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div>
       <Navbar />
-      <div className="md:flex md:grid-cols-12 mt-6">
+      <div className="md:flex md:grid-cols-12 mt-6 md:mt-20">
         <section className="col-start-2 col-end-8" style={{ flex: "1" }}>
           <HeaderOne
             text={

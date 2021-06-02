@@ -38,7 +38,7 @@ const SectionTwo = () => {
           </div>
         </div>
 
-        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-6">
+        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-16">
           <div className="md:col-start-2 md:col-end-6">
             <img
               src={smartBooking}
@@ -58,7 +58,7 @@ const SectionTwo = () => {
           </div>
         </div>
 
-        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-10">
+        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-16">
           <div className="col-start-2 col-end-6">
             <Aside
               title="Effectively manage your company mails and package deliveries"
@@ -78,7 +78,7 @@ const SectionTwo = () => {
           </div>
         </div>
 
-        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-10">
+        <div className="md:grid md:grid-cols-12 mt-16 lg:mt-16">
           <div className="md:col-start-2 md:col-end-6">
             <img
               src={smartBooking}

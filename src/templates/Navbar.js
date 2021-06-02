@@ -13,7 +13,10 @@ const Navbar = () => {
         </Link>
 
         <nav>
-          <ul className="hidden md:flex items-center md:justify-between ml-72 text-lightBlack">
+          <ul
+            className="hidden md:flex items-center md:justify-between text-lightBlack"
+            style={{ marginLeft: "27rem" }}
+          >
             <Dropdown />
             {NavbarData.map((item, index) => {
               return (
